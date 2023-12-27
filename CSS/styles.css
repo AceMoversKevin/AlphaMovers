@@ -1,4 +1,6 @@
 /* style.css */
+
+/* Header Content */
 body {
     font-family: Arial, sans-serif;
 }
@@ -17,7 +19,7 @@ header {
 }
 
 #navbar ul li {
-    float: left;
+    float: right;
 }
 
 #navbar ul li a {
@@ -32,3 +34,5 @@ header {
     background-color: #ddd;
     color: black;
 }
+
+/*-------------------------------------------------------------------------------------------------------------------------*/
