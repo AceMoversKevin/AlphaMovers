@@ -15,6 +15,7 @@ header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
+
 #navbar {
     text-align: right;
 }
@@ -46,3 +47,35 @@ header {
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
+
+/*footer content*/
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f1f1f1; /* Change as needed */
+}
+
+.footer-column {
+    width: 30%;
+}
+
+.footer-text {
+    text-align: right;
+}
+
+footer h3 {
+    /* Style for the headings in the footer */
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000; /* Change as needed */
+    /* Add more styles as needed */
+}
