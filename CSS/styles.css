@@ -95,8 +95,8 @@ form input[type="email"],
 form select {
     display: block;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 6px;
+    margin: 4px 0;
     border: 1px solid #bdc3c7;
     border-radius: 4px;
 }
@@ -147,6 +147,48 @@ form button:hover {
     z-index: 1;
     
 }
+
+#why-us {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#why-us h2 {
+    font-size: 2em;
+    color: #34495e;
+    margin-bottom: 30px;
+}
+
+.service-box {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    min-width: 200px;
+}
+
+.service-box img {
+    max-width: 50px; /* Adjust size as needed */
+    margin-bottom: 15px;
+}
+
+.service-box p {
+    color: #2c3e50;
+    font-size: 1em;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .service-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
 
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
