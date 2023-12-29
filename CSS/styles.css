@@ -78,8 +78,13 @@ main {
     margin-bottom: 20px;
 }
 
+#quote-form {
+    text-align: center; /* Center the form title */
+    margin-bottom: 20px;
+}
+
 #quote-form h2 {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -87,6 +92,8 @@ form {
     background: #ecf0f1;
     padding: 20px;
     border-radius: 8px;
+    width: 50%; /* Adjust the width of the form */
+    margin: auto; /* Center the form in the parent container */
 }
 
 form input[type="text"],
@@ -94,9 +101,9 @@ form input[type="tel"],
 form input[type="email"],
 form select {
     display: block;
-    width: 100%;
-    padding: 6px;
-    margin: 4px 0;
+    width: 90%; /* Make the input fields responsive */
+    padding: 10px; /* Increase padding for better aesthetics */
+    margin: 10px auto; /* Center the fields and add space */
     border: 1px solid #bdc3c7;
     border-radius: 4px;
 }
@@ -108,9 +115,9 @@ form button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20px;
     display: block;
-    width: 100%;
+    width: 90%; /* Align the button width with input fields */
 }
 
 form button:hover {
@@ -170,13 +177,16 @@ form button:hover {
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------- slideshow -------------------------------------------------------*/
-
 #slideshow-container {
     position: relative;
     width: 60%; /* Adjust the width as needed */
     height: 300px; /* Adjust height for aesthetic appeal */
     margin: 20px auto; /* Center the container and add some vertical space */
     overflow: hidden; /* Hide anything outside the container */
+}
+
+#slideshow-container h2{
+    text-align: center;
 }
 
 .slide {
