@@ -228,11 +228,18 @@ form button:hover {
     }
 }
 
+.divider {
+    height: 2px;
+    background: #ddd;
+    width: 80%; /* or 100% if you want it full-width */
+    margin: 0 auto; /* Center the divider */
+}
+
 .statistics-section {
     width: 100%;
     background-color: #232a34; /* Dark background color */
     color: #fff; /* White text color */
-    padding: 20px 0; /* Top and bottom padding */
+    padding: 100px 0; /* Top and bottom padding */
 }
 
 .statistics-container {
