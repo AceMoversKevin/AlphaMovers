@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Moving Company</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
 </head>
+
 <body>
     <header>
 
         <img src="images/acemovers.jpg" alt="Your Logo" id="header-logo">
-            <!-- Other header content -->
+        <!-- Other header content -->
 
         <nav id="navbar">
             <ul>
@@ -27,114 +29,115 @@
                 <li><a href="template.html">Template</a></li>
             </ul>
         </nav>
-        
-            
-        
-    
+
+
+
+
     </header>
 
     <!-- Add your page content here -->
 
     <main>
 
-            <div id="intro">
-                <h1>Stress Free Moving</h1>
+        <div id="intro">
+            <h1>Stress Free Moving</h1>
+        </div>
+        <!--This is for the form add everything else after-->
+        <div id="quote-form">
+            <h2>Get a free quote</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <select id="scale" name="scale">
+                    <option value="" disabled selected>Scale of move</option>
+                    <option value="1bdr">1 Bedroom</option>
+                    <option value="2bdr">2 Bedroom</option>
+                    <option value="3bdr">3 Bedroom</option>
+                    <option value="4bdr">4 Bedroom</option>
+                    <option value="5mbdr">5+ Bedroom</option>
+                    <!-- Add more options as needed -->
+                </select>
+                <input type="date" id="date" name="date" placeholder="DD/MM/YY" required>
+                <input type="text" id="moving-from" name="moving_from" placeholder="Moving From" required>
+                <input type="text" id="moving-to" name="moving_to" placeholder="Moving To" required>
+                <input type="tel" id="contact-number" name="contact_number" placeholder="Contact Number" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <!--The three squares on the main-->
+        <div id="why-us">
+
+            <h2>Why You Should Use Us</h2>
+
+            <div class="service-boxes">
+
+                <div class="service-box">
+                    <img src="images/icons/truck.svg" alt="Truck Icon">
+                    <p>Whether it is directly around the corner or across town, we can handle it in the fastest and
+                        safest way.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="images/icons/plane.svg" alt="Plane Icon">
+                    <p>Whether it is regional or across the country, our movers have been there, done that.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="images/icons/briefcase.svg" alt="Briefcase Icon">
+                    <p>Whether it is your shop, or your corporate office, we have you covered.</p>
+                </div>
+
             </div>
-            <!--This is for the form add everything else after-->
-            <div id="quote-form">
-                <h2>Get a free quote</h2>
-                <form>
-                    <input type="text" id="name" name="name" placeholder="Name" required>
-                    <select id="scale" name="scale">
-                        <option value="" disabled selected>Scale of move</option>
-                        <option value="1bdr">1 Bedroom</option>
-                        <option value="2bdr">2 Bedroom</option>
-                        <option value="3bdr">3 Bedroom</option>
-                        <option value="4bdr">4 Bedroom</option>
-                        <option value="5mbdr">5+ Bedroom</option>
-                        <!-- Add more options as needed -->
-                    </select>
-                    <input type="date" id="date" name="date" placeholder="DD/MM/YY" required>
-                    <input type="text" id="moving-from" name="moving_from" placeholder="Moving From" required>
-                    <input type="text" id="moving-to" name="moving_to" placeholder="Moving To" required>
-                    <input type="tel" id="contact-number" name="contact_number" placeholder="Contact Number" required>
-                    <input type="email" id="email" name="email" placeholder="Email Address" required>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
-            <!--The three squares on the main-->
-            <div id="why-us">
+        </div>
 
-                <h2>Why You Should Use Us</h2>
+        <div class="divider"></div>
 
-                <div class="service-boxes">
-
-                    <div class="service-box">
-                        <img src="images/icons/truck.svg" alt="Truck Icon">
-                        <p>Whether it is directly around the corner or across town, we can handle it in the fastest and safest way.</p>
-                    </div>
-
-                    <div class="service-box">
-                        <img src="images/icons/plane.svg" alt="Plane Icon">
-                        <p>Whether it is regional or across the country, our movers have been there, done that.</p>
-                    </div>
-
-                    <div class="service-box">
-                        <img src="images/icons/briefcase.svg" alt="Briefcase Icon">
-                        <p>Whether it is your shop, or your corporate office, we have you covered.</p>
-                    </div>
-
+        <div class="statistics-section">
+            <div class="statistics-container">
+                <div class="statistic">
+                    <img src="images/icons/calendar.svg" alt="Years in Service" class="filter-white">
+                    <span class="stat-number">15+</span>
+                    <span class="stat-description">Years in Service</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/home.svg" alt="Residential Moves" class="filter-white">
+                    <span class="stat-number">105,000+</span>
+                    <span class="stat-description">Residential Moves This Year</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/package.svg" alt="Business Moves" class="filter-white">
+                    <span class="stat-number">51,000+</span>
+                    <span class="stat-description">Business Moves This Year</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/user.svg" alt="Happy Clients" class="filter-white">
+                    <span class="stat-number">120,000+</span>
+                    <span class="stat-description">Happy Clients</span>
                 </div>
             </div>
+        </div>
 
-            <div class="divider"></div>
+        <!--The slide show-->
+        <div id="slideshow-container">
+            <h2 id="slideshow-heading">Customer Testimonials</h2>
+            <!-- Slideshow images -->
+            <div class="slide fade">
+                <img src="images/im1.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="images/im2.jpg" style="width:100%">
+            </div>
+            <div class="slide fade">
+                <img src="images/im3.jpg" style="width:100%">
+            </div>
 
-            <div class="statistics-section">
-                <div class="statistics-container">
-                    <div class="statistic">
-                        <img src="images/icons/calendar.svg" alt="Years in Service" class="filter-white">
-                        <span class="stat-number">15+</span>
-                        <span class="stat-description">Years in Service</span>
-                    </div>
-                    <div class="statistic">
-                        <img src="images/icons/home.svg" alt="Residential Moves" class="filter-white">
-                        <span class="stat-number">105,000+</span>
-                        <span class="stat-description">Residential Moves This Year</span>
-                    </div>
-                    <div class="statistic">
-                        <img src="images/icons/package.svg" alt="Business Moves" class="filter-white">
-                        <span class="stat-number">51,000+</span>
-                        <span class="stat-description">Business Moves This Year</span>
-                    </div>
-                    <div class="statistic">
-                        <img src="images/icons/user.svg" alt="Happy Clients" class="filter-white">
-                        <span class="stat-number">120,000+</span>
-                        <span class="stat-description">Happy Clients</span>
-                    </div>
-                </div>
-            </div>
-            
-            <!--The slide show-->
-            <div id="slideshow-container">
-                <h2 id="slideshow-heading">Customer Testimonials</h2>
-                <!-- Slideshow images -->
-                <div class="slide fade">
-                    <img src="images/im1.jpg" style="width:100%">
-                </div>
-                <div class="slide fade">
-                    <img src="images/im2.jpg" style="width:100%">
-                </div>
-                <div class="slide fade">
-                    <img src="images/im3.jpg" style="width:100%">
-                </div>
-                
-            </div>
-    
-            
+        </div>
+
+
 
         <!-- Additional sections can be added here -->
     </main>
-    
+
 
     <footer>
         <div class="footer-column">
@@ -154,10 +157,14 @@
             <!-- Add more contact information as needed -->
         </div>
         <div class="footer-column footer-text">
-            <p>At Alpha Movers, we understand that relocation can be overwhelming for many people. With the added pressure of getting your stuff from A to B safely, it can be stressful. We believe that no one deserves to go through such stress, that’s why we put our prime focus in making the move smooth and stress-free for you.</p>
+            <p>At Alpha Movers, we understand that relocation can be overwhelming for many people. With the added
+                pressure of getting your stuff from A to B safely, it can be stressful. We believe that no one deserves
+                to go through such stress, that’s why we put our prime focus in making the move smooth and stress-free
+                for you.</p>
         </div>
     </footer>
 
-    <script src="JS/script.js"></script> 
+    <script src="JS/script.js"></script>
 </body>
+
 </html>
