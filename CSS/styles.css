@@ -452,6 +452,19 @@ form button:hover {
     margin-bottom: 20px; /* Add space above the button if added */
 }
 
+/* Responsive grid for different screen sizes */
+@media (max-width: 1024px) {
+    .features-section {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        grid-template-columns: 1fr; /* One column for small screens */
+    }
+}
+
 
 
 
