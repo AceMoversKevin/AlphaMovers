@@ -185,7 +185,7 @@ form button:hover {
 
 /*------------------------------------------------------------Body content Services----------------------------------------------------*/
 
-#local-move-section {
+#local-move-segment {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -194,24 +194,24 @@ form button:hover {
     margin: auto;
 }
 
-#local-move-section .content {
+#local-move-segment .content {
     flex: 1;
     padding-right: 20px; /* Adjust as needed for spacing */
 }
 
-#local-move-section .content h2 {
+#local-move-segment .content h2 {
     font-size: 2rem;
     color: #333;
     margin-bottom: 1rem;
 }
 
-#local-move-section .content p {
+#local-move-segment .content p {
     font-size: 1rem;
     color: #666;
     line-height: 1.5;
 }
 
-#local-move-section .content button {
+#local-move-segment .content button {
     padding: 10px 20px;
     background-color: #2c3e50;
     color: white;
@@ -222,19 +222,30 @@ form button:hover {
     margin-top: 20px; /* Adds space above the button */
 }
 
-#local-move-section .content button:hover {
+#local-move-segment .content button:hover {
     background-color: #34495e;
 }
 
-#local-move-section .image {
+#local-move-segment .image {
     flex: 1;
     text-align: center; /* Centers the image if it's not full-width */
 }
 
-#local-move-section .image img {
+#local-move-segment .image img {
     max-width: 100%; /* Ensures image is responsive and doesn't overflow */
     height: auto; /* Maintains aspect ratio */
 }
+
+
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+    margin: 40px 0; /* Adjust the vertical spacing around the divider as needed */
+}
+
+
 
 
 /*------------------------------------------------------------------------------------------------------------------------------------*/
