@@ -13,19 +13,24 @@ header {
     color: white;
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-    position: relative; /* Add relative positioning */
-    z-index: 10; /* Ensure header is above other content */
+    position: relative;
+    /* Add relative positioning */
+    z-index: 10;
+    /* Ensure header is above other content */
 }
 
 #header-logo {
-    height: 50px; /* Adjust the size as needed */
-    margin-right: 20px; /* Space between logo and next element */
+    height: 50px;
+    /* Adjust the size as needed */
+    margin-right: 20px;
+    /* Space between logo and next element */
 }
 
 
 #navbar {
     text-align: right;
-    position: relative; /* Ensure navbar is positioned correctly */
+    position: relative;
+    /* Ensure navbar is positioned correctly */
 }
 
 #navbar ul {
@@ -61,7 +66,8 @@ header {
 }
 
 .dropbtn {
-    background-color: black; /* Replace with actual color code */
+    background-color: black;
+    /* Replace with actual color code */
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -74,8 +80,9 @@ header {
     position: absolute;
     background-color: grey;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 999; /* High z-index to ensure it's on top */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    /* High z-index to ensure it's on top */
 }
 
 .dropdown-content a {
@@ -86,14 +93,17 @@ header {
     text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
 
 .dropdown:hover .dropbtn {
-    background-color: grey; /* Darker color on hover */
+    background-color: grey;
+    /* Darker color on hover */
 }
 
 
@@ -101,7 +111,8 @@ header {
 
 /*------------------------------------------------------------Body content Home----------------------------------------------------*/
 main {
-    padding-top: 70px; /* Adjust this value to match the height of the header */
+    padding-top: 70px;
+    /* Adjust this value to match the height of the header */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,17 +128,24 @@ main {
 
 #quote-form {
     text-align: center;
-    margin: 2em auto; /* Centers the form with top and bottom margin for desktop */
+    margin: 2em auto;
+    /* Centers the form with top and bottom margin for desktop */
     padding: 2em;
-    background: #ffffff; /* White background */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* More prominent shadow for depth */
-    width: auto; /* Auto width based on its content */
-    max-width: 1000px; /* Maximum width of the form */
+    background: #ffffff;
+    /* White background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* More prominent shadow for depth */
+    width: auto;
+    /* Auto width based on its content */
+    max-width: 1000px;
+    /* Maximum width of the form */
 }
 
 #quote-form h2 {
-    color: #2c3e50; /* A shade of dark blue for the title */
+    color: #2c3e50;
+    /* A shade of dark blue for the title */
     margin-bottom: 1em;
 }
 
@@ -144,34 +162,45 @@ form input[type="date"],
 form select,
 form button {
     padding: 1em;
-    border: 1px solid #ccc; /* Lighter border color */
+    border: 1px solid #ccc;
+    /* Lighter border color */
     border-radius: 5px;
     width: 300px;
     font-size: 1rem;
-    color: #2c3e50; /* Text color similar to the form title */
+    color: #2c3e50;
+    /* Text color similar to the form title */
 }
 
 /* Style for the submit button */
 form button {
-    background-color: #34495e; /* Darker blue for contrast */
+    background-color: #34495e;
+    /* Darker blue for contrast */
     color: white;
-    border: none; /* No border for button */
-    margin-top: 1em; /* Space above the button */
-    padding: 1em 0; /* Padding top and bottom */
-    width: 100%; /* Full width */
-    cursor: pointer; /* Cursor for button */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow for depth */
-    transition: background-color 0.3s; /* Transition for hover effect */
+    border: none;
+    /* No border for button */
+    margin-top: 1em;
+    /* Space above the button */
+    padding: 1em 0;
+    /* Padding top and bottom */
+    width: 100%;
+    /* Full width */
+    cursor: pointer;
+    /* Cursor for button */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    /* Shadow for depth */
+    transition: background-color 0.3s;
+    /* Transition for hover effect */
 }
 
 form button:hover {
-    background-color: #3c5987; /* A slightly lighter blue on hover */
+    background-color: #3c5987;
+    /* A slightly lighter blue on hover */
 }
 
 #main-content {
     position: relative;
     z-index: 1;
-    
+
 }
 
 #why-us {
@@ -185,11 +214,15 @@ form button:hover {
     margin-bottom: 30px;
 }
 
-.service-boxes { /* This container will hold all service boxes */
+.service-boxes {
+    /* This container will hold all service boxes */
     display: flex;
-    justify-content: center; /* Center the boxes horizontally */
-    flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
-    gap: 20px; /* Space between boxes */
+    justify-content: center;
+    /* Center the boxes horizontally */
+    flex-wrap: wrap;
+    /* Allow boxes to wrap to the next line on smaller screens */
+    gap: 20px;
+    /* Space between boxes */
 }
 
 .service-box {
@@ -232,51 +265,67 @@ form button:hover {
 .divider {
     height: 2px;
     background: #ddd;
-    width: 80%; /* or 100% if you want it full-width */
-    margin: 0 auto; /* Center the divider */
+    width: 80%;
+    /* or 100% if you want it full-width */
+    margin: 0 auto;
+    /* Center the divider */
 }
 
 .statistics-section {
     width: 100%;
-    background-color: #232a34; /* Dark background color */
-    color: #fff; /* White text color */
-    padding: 100px 0; /* Top and bottom padding */
+    background-color: #232a34;
+    /* Dark background color */
+    color: #fff;
+    /* White text color */
+    padding: 100px 0;
+    /* Top and bottom padding */
 }
 
 .statistics-container {
     display: flex;
-    justify-content: space-around; /* Evenly space the statistics */
+    justify-content: space-around;
+    /* Evenly space the statistics */
     align-items: center;
-    max-width: 1200px; /* Max width of the content */
-    margin: 0 auto; /* Center the container */
+    max-width: 1200px;
+    /* Max width of the content */
+    margin: 0 auto;
+    /* Center the container */
 }
 
 .statistic {
-    text-align: center; /* Center the content */
+    text-align: center;
+    /* Center the content */
 }
 
 .statistic img {
-    max-width: 60px; /* Adjust based on your icon sizes */
-    margin-bottom: 10px; /* Space below the icon */
+    max-width: 60px;
+    /* Adjust based on your icon sizes */
+    margin-bottom: 10px;
+    /* Space below the icon */
 }
 
 .stat-number {
     display: block;
-    font-size: 2em; /* Large font size for the number */
-    font-weight: bold; /* Make the number bold */
+    font-size: 2em;
+    /* Large font size for the number */
+    font-weight: bold;
+    /* Make the number bold */
 }
 
 .stat-description {
-    font-size: 0.9em; /* Smaller font size for the description */
+    font-size: 0.9em;
+    /* Smaller font size for the description */
 }
 
 @media (max-width: 768px) {
     .statistics-container {
-        flex-direction: column; /* Stack the statistics on top of each other on small screens */
+        flex-direction: column;
+        /* Stack the statistics on top of each other on small screens */
     }
 
     .statistic {
-        margin-bottom: 20px; /* Space between stacked statistics */
+        margin-bottom: 20px;
+        /* Space between stacked statistics */
     }
 }
 
@@ -297,7 +346,8 @@ form button:hover {
 
 #local-move-segment .content {
     flex: 1;
-    padding-right: 20px; /* Adjust as needed for spacing */
+    padding-right: 20px;
+    /* Adjust as needed for spacing */
 }
 
 #local-move-segment .content h2 {
@@ -320,7 +370,8 @@ form button:hover {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1rem;
-    margin-top: 20px; /* Adds space above the button */
+    margin-top: 20px;
+    /* Adds space above the button */
 }
 
 #local-move-segment .content button:hover {
@@ -329,12 +380,15 @@ form button:hover {
 
 #local-move-segment .image {
     flex: 1;
-    text-align: center; /* Centers the image if it's not full-width */
+    text-align: center;
+    /* Centers the image if it's not full-width */
 }
 
 #local-move-segment .image img {
-    max-width: 100%; /* Ensures image is responsive and doesn't overflow */
-    height: auto; /* Maintains aspect ratio */
+    max-width: 100%;
+    /* Ensures image is responsive and doesn't overflow */
+    height: auto;
+    /* Maintains aspect ratio */
 }
 
 
@@ -343,7 +397,8 @@ form button:hover {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-    margin: 40px 0; /* Adjust the vertical spacing around the divider as needed */
+    margin: 40px 0;
+    /* Adjust the vertical spacing around the divider as needed */
 }
 
 
@@ -354,46 +409,61 @@ form button:hover {
 /*------------------------------------------------------------Body content About----------------------------------------------------*/
 
 .about-header {
-    background-image: url('path-to-your-background-image.jpg'); /* Replace with the path to your actual image */
+    background-image: url('path-to-your-background-image.jpg');
+    /* Replace with the path to your actual image */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     width: 100%;
-    text-align: center; /* Center the text inside the div */
+    text-align: center;
+    /* Center the text inside the div */
 }
 
 .about-body-heading {
-    padding: 100px 0; /* Adjust the padding to control the height of the header */
-    color: black; /* Choose a text color that stands out from your background */
-    font-size: 3em; /* Adjust the font size as needed */
-    background-color: white; /* Optional: Adds a dark overlay to the text for better readability */
-    display: inline-block; /* Wrap the background around the text */
-    margin: 0; /* Remove default margin */
+    padding: 100px 0;
+    /* Adjust the padding to control the height of the header */
+    color: black;
+    /* Choose a text color that stands out from your background */
+    font-size: 3em;
+    /* Adjust the font size as needed */
+    background-color: white;
+    /* Optional: Adds a dark overlay to the text for better readability */
+    display: inline-block;
+    /* Wrap the background around the text */
+    margin: 0;
+    /* Remove default margin */
 }
 
 .about-section {
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* Align to the start to not fully center */
-    margin: auto; /* This will still center the .about-section div itself */
-    max-width: 1100px; /* Adjust the max-width for moderate width */
+    justify-content: flex-start;
+    /* Align to the start to not fully center */
+    margin: auto;
+    /* This will still center the .about-section div itself */
+    max-width: 1100px;
+    /* Adjust the max-width for moderate width */
     padding: 20px;
 }
 
 .about-text {
-    max-width: 60%; /* Set a max-width for the text */
-    padding: 0 20px; /* Add padding for spacing */
+    max-width: 60%;
+    /* Set a max-width for the text */
+    padding: 0 20px;
+    /* Add padding for spacing */
 }
 
 .about-text h2 {
     margin-bottom: 0.5em;
-    font-size: 2em; /* Adjust font size if necessary */
+    font-size: 2em;
+    /* Adjust font size if necessary */
 }
 
 .about-text p {
     font-size: 1em;
     line-height: 1.6;
-    color: #333; /* Adjust text color if necessary */
+    color: #333;
+    /* Adjust text color if necessary */
 }
 
 .about-text button {
@@ -405,7 +475,8 @@ form button:hover {
     cursor: pointer;
     font-size: 1em;
     margin-top: 20px;
-    text-transform: uppercase; /* Optional for styling */
+    text-transform: uppercase;
+    /* Optional for styling */
 }
 
 .about-text button:hover {
@@ -438,36 +509,44 @@ form button:hover {
     text-align: left;
     padding: 20px;
     margin: 20px auto;
-    max-width: 900px; /* Adjust to fit the width of your site's content area */
+    max-width: 900px;
+    /* Adjust to fit the width of your site's content area */
 }
 
 .why-us-section h2 {
-    color: #333; /* Adjust as needed */
+    color: #333;
+    /* Adjust as needed */
     font-size: 2em;
     margin-bottom: 20px;
 }
 
 .reasons-list {
-    list-style: none; /* Remove default list styling */
+    list-style: none;
+    /* Remove default list styling */
     padding: 0;
 }
 
 .reasons-list li {
-    margin-bottom: 10px; /* Spacing between list items */
-    padding-left: 30px; /* Space for the tick */
+    margin-bottom: 10px;
+    /* Spacing between list items */
+    padding-left: 30px;
+    /* Space for the tick */
     position: relative;
-    line-height: 1.6; /* Adjust line height for readability */
+    line-height: 1.6;
+    /* Adjust line height for readability */
 }
 
 .tick {
-    color: black; /* Black ticks instead of red */
+    color: black;
+    /* Black ticks instead of red */
     position: absolute;
     left: 0;
 }
 
 .features-section {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Define three columns for larger screens */
+    grid-template-columns: repeat(3, 1fr);
+    /* Define three columns for larger screens */
     gap: 20px;
     padding: 20px;
 }
@@ -483,40 +562,50 @@ form button:hover {
 }
 
 .feature-card:hover {
-    transform: translateY(-5px); /* Optional: Adds a small hover effect */
+    transform: translateY(-5px);
+    /* Optional: Adds a small hover effect */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .feature-card img {
-    width: 80px; /* Adjust the size as needed */
-    height: 80px; /* Adjust the height to match width for consistency */
-    object-fit: contain; /* Keep the icons aspect ratio */
+    width: 80px;
+    /* Adjust the size as needed */
+    height: 80px;
+    /* Adjust the height to match width for consistency */
+    object-fit: contain;
+    /* Keep the icons aspect ratio */
     margin-bottom: 20px;
 }
 
 .feature-card h3 {
     color: #333;
     margin-bottom: 10px;
-    font-size: 1.2rem; /* Make the title slightly larger */
+    font-size: 1.2rem;
+    /* Make the title slightly larger */
 }
 
 .feature-card p {
     color: #666;
-    font-size: 1rem; /* Standardize font size */
-    line-height: 1.6; /* Increase line height for readability */
-    margin-bottom: 20px; /* Add space above the button if added */
+    font-size: 1rem;
+    /* Standardize font size */
+    line-height: 1.6;
+    /* Increase line height for readability */
+    margin-bottom: 20px;
+    /* Add space above the button if added */
 }
 
 /* Responsive grid for different screen sizes */
 @media (max-width: 1024px) {
     .features-section {
-        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screens */
     }
 }
 
 @media (max-width: 768px) {
     .features-section {
-        grid-template-columns: 1fr; /* One column for small screens */
+        grid-template-columns: 1fr;
+        /* One column for small screens */
     }
 }
 
@@ -526,42 +615,94 @@ form button:hover {
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*---------------------------------------------------------- slideshow -------------------------------------------------------*/
-#slideshow-container {
-    position: relative;
-    width: 60%; /* Adjust the width as needed */
-    height: 300px; /* Adjust height for aesthetic appeal */
-    margin: 20px auto; /* Center the container and add some vertical space */
-    overflow: hidden; /* Hide anything outside the container */
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
 }
 
-#slideshow-container h2{
-    text-align: center;
+/* Hide the images by default */
+.mySlides {
+  display: none;
 }
 
-.slide {
-    position: absolute; /* Absolute positioning inside the relative container */
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; /* Center content vertically and horizontally */
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.slide img {
-    width: auto; /* Maintain aspect ratio */
-    height: 100%; /* Fit to container height */
-    object-fit: contain; /* Ensure the image is fully visible */
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
 .fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
 @keyframes fade {
-    from {opacity: .4}
-    to {opacity: 1}
+  from {opacity: .4}
+  to {opacity: 1}
 }
+
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
@@ -571,7 +712,8 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #f1f1f1; /* Change as needed */
+    background-color: #f1f1f1;
+    /* Change as needed */
 }
 
 .footer-column {
@@ -593,7 +735,8 @@ footer ul {
 
 footer ul li a {
     text-decoration: none;
-    color: #000; /* Change as needed */
+    color: #000;
+    /* Change as needed */
     /* Add more styles as needed */
 }
 
