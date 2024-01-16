@@ -1,0 +1,36 @@
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.name {
+    flex: 1 0 10rem;
+}
+
+.email {
+    flex: 1 0 10rem;
+}
+
+.button {
+    flex: 1 0 5rem;
+    background-color: #c0b9a5;
+}
+
+#exp-quote-form {
+    text-align: center;
+    margin: 2em auto;
+    /* Centers the form with top and bottom margin for desktop */
+    padding: 2em;
+    background: #ffffff;
+    /* White background */
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    /* More prominent shadow for depth */
+    width: auto;
+    /* Auto width based on its content */
+    max-width: 400px;
+    /* Maximum width of the form */
+    display: flex;
+}
