@@ -1,36 +1,46 @@
-.form {
+.review-block {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    background: #fff;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .review-header {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-}
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  .profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 10px;
+    background: url('/images/Generic-Profile.webp') no-repeat center;
+    background-size: cover;
+  }
+  .reviewer-name {
+    font-weight: bold;
+    margin: 0;
+  }
+  .review-meta {
+    color: #757575;
+    font-size: 12px;
+  }
+  .review-stars {
+    color: #f5a623;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .review-body {
+    font-size: 14px;
+    color: #333;
+  }
 
-.name {
-    flex: 1 0 10rem;
-}
-
-.email {
-    flex: 1 0 10rem;
-}
-
-.button {
-    flex: 1 0 5rem;
-    background-color: #c0b9a5;
-}
-
-#exp-quote-form {
-    text-align: center;
-    margin: 2em auto;
-    /* Centers the form with top and bottom margin for desktop */
-    padding: 2em;
-    background: #ffffff;
-    /* White background */
-    border-radius: 10px;
-    /* Rounded corners */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    /* More prominent shadow for depth */
-    width: auto;
-    /* Auto width based on its content */
-    max-width: 400px;
-    /* Maximum width of the form */
+  .review-block-container {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
     display: flex;
-}
+    justify-content: center;
+    padding-top: 50px;
+  }
