@@ -6,7 +6,7 @@ body, html {
 }
 
 .contact-banner {
-    background-color: #cacaca; /* Replace with the actual color code of your banner */
+    background-color: #ffffff; /* Replace with the actual color code of your banner */
     background-image: url('path-to-your-image.jpg'); /* Add the path to your background image */
     background-size: cover;
     background-position: center;
@@ -20,7 +20,7 @@ body, html {
 }
 
 .contact-content {
-    max-width: 1200px; /* Adjust as needed for your layout */
+    max-width: 1200rem; /* Adjust as needed for your layout */
 }
 
 #contact-content-heading {
