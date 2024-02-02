@@ -33,3 +33,42 @@ body, html {
     font-size: 24px; /* Adjust as needed */
     margin: 1px 0;
 }
+
+.service-card {
+    background-color: white;
+    border: 1px solid #ccc; /* Example border */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px; /* Adjust as necessary */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Example shadow */
+}
+
+.icon img {
+    width: 50px; /* Adjust as necessary */
+    height: auto;
+}
+
+.title {
+    color: #333; /* Example text color */
+    font-size: 24px; /* Adjust as necessary */
+    margin: 20px 0;
+}
+
+.phone-number {
+    color: #000000; /* Example phone number color */
+    font-size: 20px; /* Adjust as necessary */
+    font-weight: bold;
+}
+
+.phone-icon {
+    margin-right: 10px;
+}
+
+.service-card-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: auto;
+
+}
