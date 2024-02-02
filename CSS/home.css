@@ -34,6 +34,10 @@ main {
     flex: 1 0 10rem;
 }
 
+.type {
+    flex: 1 0 10rem;
+}
+
 .date {
     flex: 1 0 10rem;
 }
