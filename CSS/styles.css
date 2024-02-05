@@ -20,10 +20,29 @@ header {
 }
 
 #header-logo {
-    height: 50px;
+    height: 120px;
     /* Adjust the size as needed */
     margin-right: 20px;
+
     /* Space between logo and next element */
+    padding:20px 10px;
+   
+  
+}
+
+.social-icons img {
+    width: 40px; /* Adjust this value to your desired width */
+    height: 40px; /* Adjust this value to your desired height */
+    padding:2px;
+    
+}
+.companyName-Header{
+
+    display: block;
+    color: white;
+    text-align: center;
+
+
 }
 
 
@@ -144,6 +163,7 @@ footer ul li a {
     /* Change as needed */
     /* Add more styles as needed */
 }
+
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
