@@ -1,0 +1,209 @@
+/*------------------------------------------------------------Body content About----------------------------------------------------*/
+
+.about-header {
+    background-image: url('path-to-your-background-image.jpg');
+    /* Replace with the path to your actual image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    text-align: center;
+    /* Center the text inside the div */
+}
+
+
+
+.about-body-heading {
+    padding: 100px 0;
+    /* Adjust the padding to control the height of the header */
+    color: black;
+    /* Choose a text color that stands out from your background */
+    font-size: 3em;
+    /* Adjust the font size as needed */
+    background-color: white;
+    /* Optional: Adds a dark overlay to the text for better readability */
+    display: inline-block;
+    /* Wrap the background around the text */
+    margin: 0;
+    /* Remove default margin */
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align to the start to not fully center */
+    margin: auto;
+    /* This will still center the .about-section div itself */
+    max-width: 1100px;
+    /* Adjust the max-width for moderate width */
+    padding: 20px;
+}
+
+.about-text {
+    max-width: 60%;
+    /* Set a max-width for the text */
+    padding: 0 20px;
+    /* Add padding for spacing */
+}
+
+.about-text h2 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+    /* Adjust font size if necessary */
+}
+
+.about-text p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #333;
+    /* Adjust text color if necessary */
+}
+
+.about-text button {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    /* Optional for styling */
+}
+
+.about-text button:hover {
+    background-color: #34495e;
+}
+
+.about-image {
+    flex-basis: 50%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Ensure the .about-section is not fully stretched */
+@media (max-width: 1200px) {
+    .about-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text,
+    .about-image {
+        max-width: 100%;
+    }
+}
+
+.why-us-section {
+    text-align: left;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+    /* Adjust to fit the width of your site's content area */
+}
+
+.why-us-section h2 {
+    color: #333;
+    /* Adjust as needed */
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.reasons-list {
+    list-style: none;
+    /* Remove default list styling */
+    padding: 0;
+}
+
+.reasons-list li {
+    margin-bottom: 10px;
+    /* Spacing between list items */
+    padding-left: 30px;
+    /* Space for the tick */
+    position: relative;
+    line-height: 1.6;
+    /* Adjust line height for readability */
+}
+
+.tick {
+    color: black;
+    /* Black ticks instead of red */
+    position: absolute;
+    left: 0;
+}
+
+.features-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Define three columns for larger screens */
+    gap: 20px;
+    padding: 20px;
+}
+
+.feature-card {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    /* Optional: Adds a small hover effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feature-card img {
+    width: 80px;
+    /* Adjust the size as needed */
+    height: 80px;
+    /* Adjust the height to match width for consistency */
+    object-fit: contain;
+    /* Keep the icons aspect ratio */
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    /* Make the title slightly larger */
+}
+
+.feature-card p {
+    color: #666;
+    font-size: 1rem;
+    /* Standardize font size */
+    line-height: 1.6;
+    /* Increase line height for readability */
+    margin-bottom: 20px;
+    /* Add space above the button if added */
+}
+
+/* Responsive grid for different screen sizes */
+@media (max-width: 1024px) {
+    .features-section {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .features-section {
+        grid-template-columns: 1fr;
+        /* One column for small screens */
+    }
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------------------------------------------------*/
