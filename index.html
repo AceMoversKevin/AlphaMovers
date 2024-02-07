@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Moving Company</title>
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" type="text/css" href="CSS/home.css">
+</head>
+
+<body>
+    <header>
+
+
+        <div class="social-icons">
+
+            <a href = "https://www.facebook.com/Ace11Movers/">
+                <img src="images/icons/facebook.svg" alt="Insta logo" id="Insta-logo">
+                </a>
+                <a href = "https://www.instagram.com/acemovers.com.au/" >
+                <img src="images/icons/instagram.svg" alt="Facebook logo" id="Facebook-logo">
+                </a>
+                <a href = "https://twitter.com/Acemoversnc" >
+                <img src="images/icons/twitter.svg" alt="Twitter logo" id="Twitter-logo">
+                </a>
+    
+        </div>
+        
+        <img src="images/Alpha.webp" alt="Your Logo" id="header-logo">
+
+        <h1 id = "companyName-Header"> Alpha Movers</h1>
+       
+       
+
+        
+
+        <!-- Other header content -->
+
+
+
+        <nav id="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="javascript:void(0)" class="dropbtn">Services &#9662;</a>
+                    <div class="dropdown-content">
+                        <a href="services.html">Local</a>
+                        <a href="services.html">Interstate</a>
+                    </div>
+                </li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="#blogs">Blogs</a></li>
+                <li><a href="template.html">Template</a></li>
+            </ul>
+        </nav>
+
+
+
+
+    </header>
+
+    <!-- Add your page content here -->
+
+    <main>
+
+        <div id="intro">
+            <h1>Stress Free Moving</h1>
+        </div>
+        <!--This is for the form add everything else after-->
+        <div id="quote-form">
+            <h2 class="form-heading">Get a free quote</h2>
+            <form>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+                <select id="type" name="type" onchange="updateScaleOptions()" required>
+                    <option value="" disabled selected>Type of Move</option>
+                    <option value="residential">Residential</option>
+                    <option value="commercial">Commercial</option>
+                </select>
+                <select id="scale" name="scale" required>
+                    <option value="" disabled selected>Scale of move</option>
+                    <!-- Options will be added by JavaScript -->
+                </select>
+                <input type="date" id="date" name="date" placeholder="DD/MM/YY" required>
+                <input type="text" id="moving-from" name="moving_from" placeholder="Moving From" required>
+                <input type="text" id="moving-to" name="moving_to" placeholder="Moving To" required>
+                <input type="tel" id="contact-number" name="contact_number" placeholder="Contact Number" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <button type="submit">Submit</button>
+            </form>
+            <script src="JS/form.js"></script>
+        </div>
+        <!--The three squares on the main-->
+        <div id="why-us">
+
+            <h2>Why You Should Use Us</h2>
+
+            <div class="service-boxes">
+
+                <div class="service-box">
+                    <img src="images/icons/truck.svg" alt="Truck Icon">
+                    <p>Whether it is directly around the corner or across town, we can handle it in the fastest and
+                        safest way.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="images/icons/plane.svg" alt="Plane Icon">
+                    <p>Whether it is regional or across the country, our movers have been there, done that.</p>
+                </div>
+
+                <div class="service-box">
+                    <img src="images/icons/briefcase.svg" alt="Briefcase Icon">
+                    <p>Whether it is your shop, or your corporate office, we have you covered.</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="statistics-section">
+            <div class="statistics-container">
+                <div class="statistic">
+                    <img src="images/icons/calendar.svg" alt="Years in Service" class="filter-white">
+                    <span class="stat-number" id="years-in-service">15+</span>
+                    <span class="stat-description">Years in Service</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/home.svg" alt="Residential Moves" class="filter-white">
+                    <span class="stat-number" id="no-of-residential-moves">412</span>
+                    <span class="stat-description">Residential Moves This Year</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/package.svg" alt="Business Moves" class="filter-white">
+                    <span class="stat-number" id="no-of-business-moves">216</span>
+                    <span class="stat-description">Business Moves This Year</span>
+                </div>
+                <div class="statistic">
+                    <img src="images/icons/user.svg" alt="Happy Clients" class="filter-white">
+                    <span class="stat-number" id="no-of-clients">120,000+</span>
+                    <span class="stat-description">Happy Clients</span>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- review section and container -->
+        <div class="review-section">
+
+            <div class="review-block-container">
+
+                <div class="review-block">
+                    <div class="review-header">
+                        <div class="profile-image"></div>
+                        <div>
+                            <p class="reviewer-name">Chirag Pathan</p>
+                            <p class="review-meta">7 reviews · a week ago · NEW</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-body">
+                        Had a wonderful moving experience thanks to Nike and Prabh. They were very professional,
+                        courteous
+                        and accommodating.
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="review-block-container">
+
+                <div class="review-block">
+                    <div class="review-header">
+                        <div class="profile-image"></div>
+                        <div>
+                            <p class="reviewer-name">Vikram Rajput</p>
+                            <p class="review-meta">2 reviews · 2 weeks ago</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-body">
+                        Yuvraj and karan were very professional and efficient. They quickly shifted and made my move
+                        very easy. The movers worked hard and they got the job done at a great speed with the highest
+                        quality. HIGHLY RECOMMENDED 👍
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+            <div class="review-block-container">
+
+                <div class="review-block">
+                    <div class="review-header">
+                        <div class="profile-image"></div>
+                        <div>
+                            <p class="reviewer-name">Erdinc Yedikat</p>
+                            <p class="review-meta">7 reviews · 3 months ago</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-body">
+                        YUVRAJ AND ABHI WERE GREAT!!! HIGHLY RECOMMENDED!!! 💯💯👌👍💯💯These 2 guys were awesome, I
+                        have a disability so these guys just took care of everything!! They called me before they
+                        arrived and on time, they took care of all my belongings and boxes with great care & efficiency,
+                        delivered them to my new unit in no time perfectly!!! Very friendly guys too, 5/5 easy. 😁
+                        Thanks heaps fellas, take care and all the best!!! 🙏
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="review-block-container">
+
+                <div class="review-block">
+                    <div class="review-header">
+                        <div class="profile-image"></div>
+                        <div>
+                            <p class="reviewer-name">Delaney Howard-Daniells</p>
+                            <p class="review-meta">7 reviews · 3 days ago · NEW</p>
+                        </div>
+                    </div>
+                    <div class="review-stars">★★★★★</div>
+                    <div class="review-body">
+                        We had Nike and Aayush help us move house and they were so helpful, so careful and professional.
+                        They did an amazing job and will definitely be using Ace Movers again. Couldn’t recommend highly
+                        enough
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+
+
+
+        <!-- Additional sections can be added here -->
+    </main>
+
+
+    <footer>
+        <div class="footer-column">
+            <h3>Important Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#Contact">Contact</a></li>
+                <li><a href="#TermsofService">Terms of Service</a></li>
+                <!-- Add more links as needed -->
+            </ul>
+        </div>
+        <div class="footer-column">
+            <h3>Get in Touch</h3>
+            <p>Contact us at <a href="mailto:contact@movingcompany.com">contact@movingcompany.com</a></p>
+            <!-- Add more contact information as needed -->
+        </div>
+        <div class="footer-column footer-text">
+            <p>At Alpha Movers, we understand that relocation can be overwhelming for many people. With the added
+                pressure of getting your stuff from A to B safely, it can be stressful. We believe that no one deserves
+                to go through such stress, that's why we put our prime focus in making the move smooth and stress-free
+                for you.</p>
+        </div>
+    </footer>
+
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
