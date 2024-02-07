@@ -8,123 +8,120 @@ body {
     box-sizing: border-box;
 }
 
+/* Header styles */
 header {
-    background-color: #2c3e50;
+    background-color: #2c3e50; /* Consider using a brand-specific color */
     color: white;
-    padding: 10px 20px;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
-    /* Add relative positioning */
     z-index: 10;
-    /* Ensure header is above other content */
 }
 
 #header-logo {
-    height: 120px;
-    /* Adjust the size as needed */
+    height: auto;
+    width: auto;
+    max-height: 80px; /* Adjust the size as needed */
     margin-right: 20px;
-
-    /* Space between logo and next element */
-    padding:20px 10px;
-   
-  
+    padding: 10px;
 }
 
 .social-icons img {
-    width: 40px; /* Adjust this value to your desired width */
-    height: 40px; /* Adjust this value to your desired height */
-    padding:2px;
-    
+    width: 24px; /* More subtle size */
+    height: 24px; /* More subtle size */
+    margin: 0 8px;
+    vertical-align: middle; /* Align with text if necessary */
 }
-.companyName-Header{
 
-    display: block;
-    color: white;
+.companyName-Header {
+    font-size: 1.5rem; /* Larger font size for the company name */
+    font-weight: bold;
     text-align: center;
-
-
 }
 
 
+
+/* Navbar styles */
 #navbar {
     text-align: right;
-    position: relative;
-    /* Ensure navbar is positioned correctly */
 }
 
 #navbar ul {
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 #navbar ul li {
-    display: inline-block;
-    margin-left: 20px;
+    margin: 0 10px;
 }
 
 #navbar ul li a {
-    display: block;
     color: white;
-    text-align: center;
-    padding: 8px 15px;
+    padding: 10px 15px;
     text-decoration: none;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    transition: color 0.2s ease-in-out;
 }
 
-#navbar ul li a:hover {
-    background-color: white;
-    color: #2c3e50;
-    border-radius: 3px;
+
+#navbar ul li a:hover, #navbar ul li a:focus {
+    color: #ecf0f1; /* Lighter shade for hover effect */
 }
 
-/* Services drop down list */
+/* Dropdown styles */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+
 .dropbtn {
-    background-color: black;
-    /* Replace with actual color code */
+    background-color: #34495e; /* Darker shade for button */
     color: white;
-    padding: 16px;
-    font-size: 16px;
+    padding: 10px 15px;
+    font-size: 1rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: grey;
+    background-color: #ecf0f1; /* Lighter background for dropdown */
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    /* High z-index to ensure it's on top */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #2c3e50; /* Color for dropdown links */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
 }
 
 .dropdown-content a:hover {
-    background-color: #f1f1f1;
+    background-color: #bdc3c7; /* Light grey background on hover */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+    animation: fadeIn 0.3s; /* Fade in effect for dropdown */
 }
 
 .dropdown:hover .dropbtn {
-    background-color: grey;
-    /* Darker color on hover */
+    background-color: #2c3e50; /* Brand color for button hover */
 }
 
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
 
