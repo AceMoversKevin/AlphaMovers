@@ -37,13 +37,13 @@
     /* This will still center the .about-section div itself */
     max-width: 68.75rem;
     /* Adjust the max-width for moderate width */
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .about-text {
     max-width: 60%;
     /* Set a max-width for the text */
-    padding: 0 20px;
+    padding: 0 1.25rem;
     /* Add padding for spacing */
 }
 
