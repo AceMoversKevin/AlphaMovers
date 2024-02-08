@@ -14,7 +14,7 @@
 
 
 .about-body-heading {
-    padding: 100px 0;
+    padding: 6.25rem 0;
     /* Adjust the padding to control the height of the header */
     color: black;
     /* Choose a text color that stands out from your background */
@@ -35,7 +35,7 @@
     /* Align to the start to not fully center */
     margin: auto;
     /* This will still center the .about-section div itself */
-    max-width: 1100px;
+    max-width: 68.75rem;
     /* Adjust the max-width for moderate width */
     padding: 20px;
 }
