@@ -8,29 +8,27 @@ body {
     box-sizing: border-box;
 }
 
-/* Header styles */
 header {
-    background-color: #2c3e50; /* Consider using a brand-specific color */
+    background-color: #2c3e50;
     color: white;
-    padding: 20px;
+    padding: 20px 0; /* Top and bottom padding */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     position: relative;
     z-index: 10;
+    display: flex; /* Align items in a row */
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Distribute space between elements */
 }
 
-#header-logo {
-    height: auto;
-    width: auto;
-    max-height: 80px; /* Adjust the size as needed */
-    margin-right: 20px;
+/* Adjust logo and social icon sizes and alignment */
+#header-logo, .social-icons img {
+    max-height: 80px;
     padding: 10px;
 }
 
-.social-icons img {
-    width: 24px; /* More subtle size */
-    height: 24px; /* More subtle size */
-    margin: 0 8px;
-    vertical-align: middle; /* Align with text if necessary */
+.social-icons {
+    display: flex;
+    align-items: center;
 }
 
 .companyName-Header {
@@ -43,7 +41,9 @@ header {
 
 /* Navbar styles */
 #navbar {
-    text-align: right;
+    flex-grow: 1; /* Allows the navbar to grow */
+    display: flex;
+    justify-content: center; /* Center navbar items */
 }
 
 #navbar ul {
@@ -51,18 +51,18 @@ header {
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
 }
 
 #navbar ul li {
-    margin: 0 10px;
+    margin: 0 20px; /* Increase spacing */
 }
 
 #navbar ul li a {
     color: white;
-    padding: 10px 15px;
+    padding: 12px 20px; /* Increase padding for larger click area */
     text-decoration: none;
+    font-size: 1.1rem; /* Increase font size */
     transition: color 0.2s ease-in-out;
 }
 
@@ -121,6 +121,22 @@ header {
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+/* Get Quote Button */
+.get-quote-btn {
+    padding: 10px 20px;
+    margin-left: 20px;
+    background-color: #3498db; /* Brand color for the button */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    font-weight: bold; /* Make it stand out */
+    transition: background-color 0.3s ease;
+}
+
+.get-quote-btn:hover {
+    background-color: #2980b9; /* Slightly darker on hover */
 }
 
 /*-------------------------------------------------------------------------------------------------------------------------*/
