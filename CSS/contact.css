@@ -8,7 +8,7 @@
     color: rgb(0, 0, 0); /* Replace with the actual text color if different */
     text-align: center;
     width: 100%;
-    height: 250px; /* Adjust as needed */
+    height: 15.625rem; /* Adjust as needed */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,65 +19,65 @@
 }
 
 #contact-content-heading {
-    font-size: 48px; /* Adjust as needed */
+    font-size: 3rem; /* Adjust as needed */
     margin: 0;
     padding: 0;
 }
 
 #contact-content-paragraph {
-    font-size: 24px; /* Adjust as needed */
-    margin: 1px 0;
+    font-size: 1.5rem; /* Adjust as needed */
+    margin: 0.063rem 0;
 }
 
 .service-card-section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive columns */
-    gap: 30px; /* Increased gap for better spacing */
-    padding: 40px; /* Increased padding for better sectioning */
+    grid-template-columns: repeat(auto-fit, minmax(15.625rem, 1fr)); /* Responsive columns */
+    gap: 1.875rem; /* Increased gap for better spacing */
+    padding: 2.5rem; /* Increased padding for better sectioning */
     justify-content: center; /* Center cards in the grid */
 }
 
 .service-card {
     background-color: #ffffff;
     border: none; /* Removed border for a cleaner look */
-    border-radius: 10px;
-    padding: 30px;
+    border-radius: 0.625rem;
+    padding: 1.875rem;
     text-align: center;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
 }
 
 .service-card:hover {
-    transform: translateY(-5px); /* Slight lift on hover */
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2); /* Increased shadow on hover */
+    transform: translateY(-00.313rem); /* Slight lift on hover */
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.2); /* Increased shadow on hover */
 }
 
 .icon img {
-    width: 60px; /* Slightly larger icons */
+    width: 3.75rem; /* Slightly larger icons */
     height: auto;
-    margin-bottom: 20px; /* Space below the icon */
+    margin-bottom: 1.25rem; /* Space below the icon */
 }
 
 .title {
     color: #2c3e50; /* Darker color for contrast */
     font-size: 1.25rem; /* Larger font size */
     font-weight: 600; /* Added weight to title */
-    margin-bottom: 15px; /* Space below the title */
+    margin-bottom: 0.938rem; /* Space below the title */
 }
 
 .service-card .content {
     color: #333;
     font-size: 1rem; /* Adjusted font size */
-    margin-bottom: 20px; /* Space before button */
+    margin: bottom 1.25rem;; /* Space before button */
     font-weight: 400; /* Normal font weight for content */
 }
 
 .service-card button {
     background-color: #3498db; /* Brighter color for the button */
     color: white;
-    padding: 12px 20px; /* Larger padding for a bigger button */
+    padding: 0.75rem 1.25rem; /* Larger padding for a bigger button */
     border: none;
-    border-radius: 5px; /* Rounded corners */
+    border-radius: 0.313rem; /* Rounded corners */
     cursor: pointer;
     font-size: 1rem;
     font-weight: 600; /* Added weight to button text */
@@ -90,7 +90,7 @@
 }
 
 .phone-icon {
-    margin-right: 10px;
+    margin-right: 0.625rem;
     color: #000000;
 }
 
@@ -98,14 +98,14 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define three columns for larger screens */
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25rem;
+    padding: 1.25rem;
 }
 
 .service-card {
     background: #fff;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
-    border: 1px solid #ddd;
+    border: 0.063rem solid #ddd;
 
 }

@@ -63,12 +63,12 @@
 .about-text button {
     background-color: #2c3e50;
     color: white;
-    padding: 10px 15px;
+    padding: 0.625rem 0.938rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     cursor: pointer;
     font-size: 1em;
-    margin-top: 20px;
+    margin-top: 1.25rem;
     text-transform: uppercase;
     /* Optional for styling */
 }
@@ -87,7 +87,7 @@
 }
 
 /* Ensure the .about-section is not fully stretched */
-@media (max-width: 1200px) {
+@media (max-width: 75rem) {
     .about-section {
         flex-direction: column;
         align-items: center;
@@ -101,9 +101,9 @@
 
 .why-us-section {
     text-align: left;
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
+    padding: 1.25rem;
+    margin: 1.25rem auto;
+    max-width: 56.25rem;
     /* Adjust to fit the width of your site's content area */
 }
 
@@ -111,7 +111,7 @@
     color: #333;
     /* Adjust as needed */
     font-size: 2em;
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .reasons-list {
@@ -121,9 +121,9 @@
 }
 
 .reasons-list li {
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     /* Spacing between list items */
-    padding-left: 30px;
+    padding-left: 1.875rem;
     /* Space for the tick */
     position: relative;
     line-height: 1.6;
@@ -141,39 +141,39 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     /* Define three columns for larger screens */
-    gap: 20px;
-    padding: 20px;
+    gap: 1.25rem;
+    padding: 1.25rem;
 }
 
 .feature-card {
     background: #fff;
-    padding: 20px;
+    padding: 1.25rem;
     text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border: 0.063rem solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.313rem rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .feature-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-00.313rem);
     /* Optional: Adds a small hover effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.3);
 }
 
 .feature-card img {
-    width: 80px;
+    width: 5rem;
     /* Adjust the size as needed */
-    height: 80px;
+    height: 5rem;
     /* Adjust the height to match width for consistency */
     object-fit: contain;
     /* Keep the icons aspect ratio */
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .feature-card h3 {
     color: #333;
-    margin-bottom: 10px;
+    margin-bottom: 0.625rem;
     font-size: 1.2rem;
     /* Make the title slightly larger */
 }
@@ -184,19 +184,19 @@
     /* Standardize font size */
     line-height: 1.6;
     /* Increase line height for readability */
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
     /* Add space above the button if added */
 }
 
 /* Responsive grid for different screen sizes */
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
     .features-section {
         grid-template-columns: repeat(2, 1fr);
         /* Two columns for medium screens */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
     .features-section {
         grid-template-columns: 1fr;
         /* One column for small screens */

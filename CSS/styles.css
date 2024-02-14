@@ -88,7 +88,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #ecf0f1; /* Lighter background for dropdown */
+    background-color: #818181; /* Lighter background for dropdown */
     min-width: 160px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;

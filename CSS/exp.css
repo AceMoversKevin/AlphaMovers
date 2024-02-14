@@ -1,21 +1,21 @@
 .review-block {
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 20px;
+    border: 0.063rem solid #ddd;
+    border-radius: 0.25rem;
+    padding: 1.25rem;
     background: #fff;
-    width: 300px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 18.75rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.1);
   }
   .review-header {
     display: flex;
     align-items: center;
-    margin-bottom: 15px;
+    margin-bottom: 0.938rem;
   }
   .profile-image {
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 0.625rem;
     background: url('/images/Generic-Profile.webp') no-repeat center;
     background-size: cover;
   }
@@ -25,15 +25,15 @@
   }
   .review-meta {
     color: #757575;
-    font-size: 12px;
+    font-size: 0.75rem;
   }
   .review-stars {
     color: #f5a623;
-    font-size: 14px;
-    margin-bottom: 10px;
+    font-size: 0.875rem;
+    margin-bottom: 0.625rem;
   }
   .review-body {
-    font-size: 14px;
+    font-size: 0.875rem;
     color: #333;
   }
 
