@@ -108,6 +108,17 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
 function SendEmail(){
 
+    /* 
+    Name: Piyal
+    Bedrooms: 2
+    Pickup: 3122
+    Dropoff: 3171
+    Date: 2024-03-30
+    Phone number: 0412515151
+    Email: kevin@acemovers.com.au
+    Details: Test Form Input
+    */
+
     document.querySelector('form').addEventListener('submit', function (e) {
         // Prevent the actual form submission
         e.preventDefault();
