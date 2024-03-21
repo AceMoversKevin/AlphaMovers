@@ -204,18 +204,19 @@
                     <label class="label-heading" for="details">Do you want to add any additional details?</label>
                     <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
                     <div class="nav-btn-div">
-                        <button type="submit" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        <button type="submit" onclick="SendEmail()" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                     </div>
                 </label>
                 
-                <p id="confirmationMessage" class="confirmation-message">Quote Submitted! One of our team members will be in contact.</p>
+                <p id="confirmationMessage" class="confirmation-message">Quote Request Submitted! One of our team members will be in contact.</p>
 
 
                 <p id="validate"></p>
 
             </form>
-
+            <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script src="./JS/main.js" async></script>
+            
 
 
 
