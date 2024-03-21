@@ -59,13 +59,20 @@ document.getElementById("email")
     });
 
 
+window.dataLayer = window.dataLayer || [];
 
+// Function to update the data layer and console log the change for debugging
+function updateDataLayer(key, value) {
+    window.dataLayer.push({ [key]: value });
+    console.log(`Data Layer Updated: ${key} = ${value}`);
+}
 
 function next(from, to) { // 
     error.innerHTML = "";
     console.log();
     document.getElementById(from).classList.remove('is-visible');
     document.getElementById(to).classList.add('is-visible');
+    updateDataLayer('currentStep', to); // Update the current step in the data layer
 }
 
 function previous(from, to) {
@@ -73,6 +80,7 @@ function previous(from, to) {
     console.log();
     document.getElementById(from).classList.remove('is-visible');
     document.getElementById(to).classList.add('is-visible');
+    updateDataLayer('currentStep', to);
 }
 
 
@@ -98,6 +106,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
     // For demonstration purposes, let's log the formatted data
     console.log(formattedData);
+    updateDataLayer('formData', formData);
 
     // Assuming the rest of your form processing code is here
     document.getElementById('confirmationMessage').style.display = 'block';
