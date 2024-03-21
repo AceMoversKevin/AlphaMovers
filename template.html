@@ -21,57 +21,52 @@
 
 
                 <form>
-
+    
                     <label id="name" class="is-visible">
                         <label class="label-heading" for="name">What's your name?</label>
                         <input name="name" type="text" placeholder="Type your name"  />
-
+    
                         <div class="nav-btn-div">
                             <button type="button" class="nav-button" value="next" onclick="next('name','bedrooms')">OK <i
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('name','bedrooms')"></i>
                         </div>
                     </label>
-
+    
                     <label id="bedrooms">
                         <label class="label-heading" for="bedrooms">How many bedrooms are we looking at?</label>
                         <input type="number" name="bedrooms" placeholder="Enter a value"  />
-
+    
                         <!-- Update navigation buttons accordingly -->
-
+    
                         <div class="nav-btn-div">
                             <button type="button" class="nav-button" value="next" onclick="next('bedrooms','pickup')">OK <i
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
-
-                            <div class="nav-btn-div">
-                                <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
-                                <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
-                            </div>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
                         </div>
-
+    
                     </label>
                     
                     <label id="pickup">
                         <label class="label-heading" for="pickup">Nice, Now please tell me the pick-up location.</label>
                         <input name="pickup" type="text" placeholder="Pick-up location"  />
                         <!-- Update navigation buttons accordingly -->
-
+    
                         <div class="nav-btn-div">
                             <button type="button" class="nav-button" value="next" onclick="next('pickup','destination')">OK <i
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('pickup','bedrooms')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('pickup','destination')"></i>
@@ -89,7 +84,7 @@
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('destination','pickup')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('destination','movingDate')"></i>
@@ -107,7 +102,7 @@
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('movingDate','destination')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('movingDate','phone')"></i>
@@ -125,7 +120,7 @@
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('phone','movingDate')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('phone','email')"></i>
@@ -143,7 +138,7 @@
                                     class="fa fa-check" aria-hidden="true"></i></button>
                             Press <strong>Enter ↵</strong>
                         </div>
-
+    
                         <div class="nav-btn-div">
                             <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('email','phone')"></i>
                             <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('email','details')"></i>
@@ -155,19 +150,22 @@
                         <label class="label-heading" for="details">Do you want to add any additional details?</label>
                         <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
                         <div class="nav-btn-div">
-                            <button type="submit" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                            <button type="submit" onclick="SendEmail()" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                         </div>
                     </label>
-
-                    <p id="confirmationMessage" class="confirmation-message">Quote Submitted! One of our team members will be in contact.</p>
-
-
+                    
+                    <p id="confirmationMessage" class="confirmation-message">Quote Request Submitted! One of our team members will be in contact.</p>
+    
+    
                     <p id="validate"></p>
-
+    
                 </form>
-
-
-
+                <script src="https://smtpjs.com/v3/smtp.js"></script>
+                <script src="./JS/main.js" async></script>
+                
+    
+    
+    
             </div>
 
         </section>
