@@ -61,17 +61,11 @@ document.getElementById("email")
 
 
 
-function next(from, to) {
+function next(from, to) { // 
     error.innerHTML = "";
-    let value = document.getElementById(from).children[1].value;
-    if (!value || value === "") {
-        error.innerHTML = "Please enter a value";
-    }
-    else {
-        error.innerHTML = "";
-        document.getElementById(from).classList.remove('is-visible');
-        document.getElementById(to).classList.add('is-visible');
-    }
+    console.log();
+    document.getElementById(from).classList.remove('is-visible');
+    document.getElementById(to).classList.add('is-visible');
 }
 
 function previous(from, to) {
@@ -80,6 +74,8 @@ function previous(from, to) {
     document.getElementById(from).classList.remove('is-visible');
     document.getElementById(to).classList.add('is-visible');
 }
+
+
 
 document.querySelector('form').addEventListener('submit', function (e) {
     // Prevent the actual form submission
