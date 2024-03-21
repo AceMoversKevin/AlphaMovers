@@ -67,14 +67,20 @@ function updateDataLayer(key, value) {
     console.log(`Data Layer Updated: ${key} = ${value}`);
 }
 
-function next(from, to) { // 
-    error.innerHTML = "";
-    console.log();
-    document.getElementById(from).classList.remove('is-visible');
-    document.getElementById(to).classList.add('is-visible');
-    updateDataLayer('currentStep', to); // Update the current step in the data layer
+// In house function for going from one question to the next question in conversational form added mandatory checking logic (can be triggered by putting "required" tag in the HTML for the input field)
+function next(from, to) {
+    let input = document.querySelector(`#${from} input`);
+    if (input && !input.checkValidity()) {
+        error.innerHTML = "Please fill out this field.";
+    } else {
+        error.innerHTML = "";
+        document.getElementById(from).classList.remove('is-visible');
+        document.getElementById(to).classList.add('is-visible');
+        updateDataLayer('currentStep', to);
+    }
 }
 
+// In house function to go from one question in conversational form BACK to the previous question, works by removing visible of current layer and restoring visibility of previous layer
 function previous(from, to) {
     error.innerHTML = "";
     console.log();
@@ -159,7 +165,7 @@ function SendEmail(){
         console.log(formattedData);
 
 
-
+        // SMTP protocol sends form data to Elastic Email API to bounce to recipient email address
         Email.send({
             Host : "smtp.elasticemail.com",
             Username : "aaron@acemovers.com.au",
@@ -173,8 +179,7 @@ function SendEmail(){
           message => alert(message)
         );
     
-        // Assuming the rest of your form processing code is here
-        document.getElementById('confirmationMessage').style.display = 'block';
+        document.getElementById('confirmationMessage').style.display = 'block'; // Displays form submitted message
     
     
  

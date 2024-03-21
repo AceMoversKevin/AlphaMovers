@@ -77,10 +77,10 @@
             <form>
 
                 <label id="name" class="is-visible" >
-                    <img src="images/icons/bedroom.svg" alt="Prompt Service" > 
+                    <img src="images/icons/person.svg" alt="Form Icon" > 
 
                     <label class="label-heading" for="name">What's your name?</label>
-                    <input name="name" type="text" placeholder="Type your name"  />
+                    <input name="name" type="text" placeholder="Type your name" required />
 
                   
 
@@ -92,10 +92,10 @@
                 </label>
 
                 <label id="bedrooms">
-                    <img src="images/icons/bedroom.svg" alt="Prompt Service" > 
+                    <img src="images/icons/bedroom.svg" alt="Form Icon" > 
                    
                     <label class="label-heading" for="bedrooms">How many bedrooms are we looking at?</label>
-                    <input type="number" name="bedrooms" placeholder="Enter a value"  />
+                    <input type="number" name="bedrooms" placeholder="Enter a value" required />
 
                     <!-- Update navigation buttons accordingly -->
 
@@ -112,9 +112,9 @@
                 </label>
                 
                 <label id="pickup">
-                    <img src="images/icons/pick.svg" alt="Prompt Service" > 
+                    <img src="images/icons/pick.svg" alt="Form Icon" > 
                     <label class="label-heading" for="pickup">Nice, Now please tell me the pick-up location.</label>
-                    <input name="pickup" type="text" placeholder="Pick-up location"  />
+                    <input name="pickup" type="text" placeholder="Pick-up location" required />
                     <!-- Update navigation buttons accordingly -->
 
                
@@ -130,7 +130,7 @@
                 
                 <label id="destination">
                     
-                    <img src="images/icons/destination.svg" alt="Prompt Service" > 
+                    <img src="images/icons/destination.svg" alt="Form Icon" > 
                     <label class="label-heading" for="destination">And where are we moving to?</label>
                     <input name="destination" type="text" placeholder="Drop-off location"  />
                     <!-- Update navigation buttons accordingly -->
@@ -147,7 +147,7 @@
                 </label>
                 
                 <label id="movingDate">
-                    <img src="images/icons/date.svg" alt="Prompt Service" id = "destination"> 
+                    <img src="images/icons/date.svg" alt="Form Icon" > 
                     
                     <label class="label-heading" for="movingDate">Fantastic! Have you decided a moving date yet?</label>
                     <input type="date" name="movingDate"  />
@@ -165,10 +165,10 @@
                 </label>
                 
                 <label id="phone"><!--Phone-->
-                    <img src="images/icons/phone.svg" alt="Prompt Service" id = "destination"> 
+                    <img src="images/icons/phone.svg" alt="Form Icon" > 
                     
-                    <label class="label-heading" for="phone">Now please enter your phone number.</label>
-                    <input type="tel" name="phone" placeholder="0412 345 678"  />
+                    <label class="label-heading" for="phone">Now, please enter your phone number.</label>
+                    <input type="tel" name="phone" placeholder="0412 345 678" required />
                     <!-- Update navigation buttons accordingly -->
                                                                     
                     
@@ -183,9 +183,9 @@
                 </label>
                 
                 <label id="email" > <!-- Email-->
-                    <img src="images/icons/email.svg" alt="Prompt Service" id = "destination"> 
+                    <img src="images/icons/email.svg" alt="Form Icon" > 
                     
-                    <label class="label-heading" for="email">Now Please enter your email address.</label>
+                    <label class="label-heading" for="email">Now, please enter your email address.</label>
                     <input type="email" name="email" placeholder="example@email.com.au"  />
                     <!-- Update navigation buttons accordingly -->
                                                                                             
@@ -201,7 +201,7 @@
                 </label>
                 
                 <label id="details">
-                    <img src="images/icons/details.svg" alt="Prompt Service" id = "destination"> 
+                    <img src="images/icons/details.svg" alt="Form Icon" > 
                     
                     <label class="label-heading" for="details">Do you want to add any additional details?</label>
                     <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
@@ -224,9 +224,6 @@
             </form>
             <script src="https://smtpjs.com/v3/smtp.js"></script>
             <script src="./JS/main.js" async></script>
-            
-
-
 
         </div>
         
@@ -381,7 +378,7 @@
     <footer>
  
 
-        <img src="images/Alpha.webp" alt="Your Logo footer" id="footer-logo">
+        <!--img src="images/Alpha.webp" alt="Your Logo footer" id="footer-logo"-->
 
       
         <div class="footer-column">
