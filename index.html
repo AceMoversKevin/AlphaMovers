@@ -82,15 +82,13 @@
                     <label class="label-heading" for="name">What's your name?</label>
                     <input name="name" type="text" placeholder="Type your name"  />
 
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('name','bedrooms')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+                  
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('name','bedrooms')"></i>
+                        
+                        <i style="font-size:24px" onclick="next('name','bedrooms')" id = "N">Next</i>
                     </div>
+                    
                 </label>
 
                 <label id="bedrooms">
@@ -101,16 +99,14 @@
 
                     <!-- Update navigation buttons accordingly -->
 
+                  
+                  
                     <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('bedrooms','pickup')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
+                        <i style="font-size:24px" onclick="next('bedrooms','pickup')" id = "N">Next</i>
+                        <i style="font-size:24px" onclick="previous('bedrooms','name')" id = "P">Previous</i>
+                        
                     </div>
-
-                    <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
-                    </div>
+                    
 
                 </label>
                 
@@ -120,15 +116,12 @@
                     <input name="pickup" type="text" placeholder="Pick-up location"  />
                     <!-- Update navigation buttons accordingly -->
 
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('pickup','destination')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+               
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('pickup','bedrooms')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('pickup','destination')"></i>
+                        <i  style="font-size:24px" onclick="next('pickup','destination')"id = "N">Next</i>
+                        <i style="font-size:24px" onclick="previous('pickup','bedrooms')" id = "P"> Previous</i>
+                        
                     </div>
                     
                 </label>
@@ -140,15 +133,12 @@
                     <input name="destination" type="text" placeholder="Drop-off location"  />
                     <!-- Update navigation buttons accordingly -->
                     
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('destination','movingDate')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+                  
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('destination','pickup')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('destination','movingDate')"></i>
+                        <i  style="font-size:24px" onclick="next('destination','movingDate')" id = "N">Next</i>
+                        <i  style="font-size:24px" onclick="previous('destination','pickup')" id = "P">Previous</i>
+                        
                     </div>
                     
                 </label>
@@ -160,15 +150,12 @@
                     <input type="date" name="movingDate"  />
                     <!-- Update navigation buttons accordingly -->
                                             
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('movingDate','phone')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+                   
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('movingDate','destination')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('movingDate','phone')"></i>
+                        <i style="font-size:24px" onclick="next('movingDate','phone')" id = "N">Next</i>
+                        <i style="font-size:24px" onclick="previous('movingDate','destination')" id = "P">Previous</i>
+                        
                     </div>
                  
                 </label>
@@ -180,15 +167,12 @@
                     <input type="tel" name="phone" placeholder="0412 345 678"  />
                     <!-- Update navigation buttons accordingly -->
                                                                     
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('phone','email')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+                    
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('phone','movingDate')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('phone','email')"></i>
+                        <i  style="font-size:24px" onclick="next('phone','email')" id = "N">Next</i>
+                        <i  style="font-size:24px" onclick="previous('phone','movingDate')" id = "P">Previous</i>
+                        
                     </div>
                  
                 </label>
@@ -200,15 +184,12 @@
                     <input type="email" name="email" placeholder="example@email.com.au"  />
                     <!-- Update navigation buttons accordingly -->
                                                                                             
-                    <div class="nav-btn-div">
-                        <button type="button" class="nav-button" value="next" onclick="next('email','details')">OK <i
-                                class="fa fa-check" aria-hidden="true"></i></button>
-                        Press <strong>Enter ↵</strong>
-                    </div>
+                 
 
                     <div class="nav-btn-div">
-                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('email','phone')"></i>
-                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('email','details')"></i>
+                        <i style="font-size:24px" onclick="next('email','details')" id = "N">Next</i>
+                        <i style="font-size:24px" onclick="previous('email','phone')" id = "P">Previous</i>
+                        
                     </div>
                  
                 </label>
@@ -218,6 +199,12 @@
                     
                     <label class="label-heading" for="details">Do you want to add any additional details?</label>
                     <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
+                    
+                    <div class="nav-btn-div">
+                        <i style="font-size:24px" onclick="previous('details','email')"id = "P">Previous</i>
+                       
+                    </div>
+
                     <div class="nav-btn-div">
                         <button type="submit" onclick="SendEmail()" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
                     </div>

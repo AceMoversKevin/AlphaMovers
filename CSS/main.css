@@ -233,6 +233,22 @@
     -moz-transition: all 0.4s;
     transition: all 0.4s;
   }
+
+  #N,#P{
+    background: transparent;
+    color: #000000;
+    display: inline-block;
+    border: 2px solid #000000;
+    font-size: 0.8em;
+    padding:  15px;
+    Margin : 0px 10px;
+    
+
+
+  }
+
+ 
+
   
   @media (max-width: 1024px) {
     label.label-heading {
