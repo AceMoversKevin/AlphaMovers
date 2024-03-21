@@ -1,21 +1,14 @@
-let currentSlide = 0;
-let images = document.querySelectorAll('.carousel-image');
-
-function showSlide(index) {
-    images.forEach((img, i) => {
-        img.style.display = i === index ? 'block' : 'none';
+window.onload = function() {
+    var conversationalForm = window.cf.ConversationalForm.startTheConversation({
+      formEl: document.getElementById("form"),
+      context: document.getElementById("cf-context"),
+      submitCallback: function() {
+        var formData = conversationalForm.getFormData();
+                      var formDataSerialized = conversationalForm.getFormData(true);
+                      console.log("Formdata:", formData);
+                      console.log("Formdata, serialized:", formDataSerialized);
+       conversationalForm.addRobotChatResponse("Alright, you are done."); 
+      }
     });
-}
-
-function changeSlide(direction) {
-    currentSlide += direction;
-    if (currentSlide >= images.length) {
-        currentSlide = 0;
-    } else if (currentSlide < 0) {
-        currentSlide = images.length - 1;
-    }
-    showSlide(currentSlide);
-}
-
-// Initialize the carousel with the first image displayed
-showSlide(0);
+  };
+  

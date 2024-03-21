@@ -5,6 +5,8 @@
     <title>Moving Company</title>
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
     <link rel="stylesheet" type="text/css" href="CSS/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
 </head>
 
 <body>
@@ -70,104 +72,153 @@
         </div>
         <!--This is for the form add everything else after-->
         <div id="iframe-container">
-            
-    <iframe
-    id="JotFormIFrame-240730683789064"
-    title="Form"
-    onload="window.parent.scrollTo(0,0)"
-    allowtransparency="true"
-    allowfullscreen="true"
-    allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/240730683789064"
-    frameborder="0"
-    style="min-width:100%;max-width:100%;height:539px;border:none;"
-    scrolling="no"
-  >
-  </iframe>
-  <script type="text/javascript">
-  var ifr = document.getElementById("JotFormIFrame-240730683789064");
-  if (ifr) {
-    var src = ifr.src;
-    var iframeParams = [];
-    if (window.location.href && window.location.href.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(window.location.href.substr(window.location.href.indexOf("?") + 1).split('&'));
-    }
-    if (src && src.indexOf("?") > -1) {
-      iframeParams = iframeParams.concat(src.substr(src.indexOf("?") + 1).split("&"));
-      src = src.substr(0, src.indexOf("?"))
-    }
-    iframeParams.push("isIframeEmbed=1");
-    ifr.src = src + "?" + iframeParams.join('&');
-  }
-  window.handleIFrameMessage = function(e) {
-    if (typeof e.data === 'object') { return; }
-    var args = e.data.split(":");
-    if (args.length > 2) { iframe = document.getElementById("JotFormIFrame-" + args[(args.length - 1)]); } else { iframe = document.getElementById("JotFormIFrame"); }
-    if (!iframe) { return; }
-    switch (args[0]) {
-      case "scrollIntoView":
-        iframe.scrollIntoView();
-        break;
-      case "setHeight":
-        iframe.style.height = args[1] + "px";
-        if (!isNaN(args[1]) && parseInt(iframe.style.minHeight) > parseInt(args[1])) {
-          iframe.style.minHeight = args[1] + "px";
-        }
-        break;
-      case "collapseErrorPage":
-        if (iframe.clientHeight > window.innerHeight) {
-          iframe.style.height = window.innerHeight + "px";
-        }
-        break;
-      case "reloadPage":
-        window.location.reload();
-        break;
-      case "loadScript":
-        if( !window.isPermitted(e.origin, ['jotform.com', 'jotform.pro']) ) { break; }
-        var src = args[1];
-        if (args.length > 3) {
-            src = args[1] + ':' + args[2];
-        }
-        var script = document.createElement('script');
-        script.src = src;
-        script.type = 'text/javascript';
-        document.body.appendChild(script);
-        break;
-      case "exitFullscreen":
-        if      (window.document.exitFullscreen)        window.document.exitFullscreen();
-        else if (window.document.mozCancelFullScreen)   window.document.mozCancelFullScreen();
-        else if (window.document.mozCancelFullscreen)   window.document.mozCancelFullScreen();
-        else if (window.document.webkitExitFullscreen)  window.document.webkitExitFullscreen();
-        else if (window.document.msExitFullscreen)      window.document.msExitFullscreen();
-        break;
-    }
-    var isJotForm = (e.origin.indexOf("jotform") > -1) ? true : false;
-    if(isJotForm && "contentWindow" in iframe && "postMessage" in iframe.contentWindow) {
-      var urls = {"docurl":encodeURIComponent(document.URL),"referrer":encodeURIComponent(document.referrer)};
-      iframe.contentWindow.postMessage(JSON.stringify({"type":"urls","value":urls}), "*");
-    }
-  };
-  window.isPermitted = function(originUrl, whitelisted_domains) {
-    var url = document.createElement('a');
-    url.href = originUrl;
-    var hostname = url.hostname;
-    var result = false;
-    if( typeof hostname !== 'undefined' ) {
-      whitelisted_domains.forEach(function(element) {
-          if( hostname.slice((-1 * element.length - 1)) === '.'.concat(element) ||  hostname === element ) {
-              result = true;
-          }
-      });
-      return result;
-    }
-  };
-  if (window.addEventListener) {
-    window.addEventListener("message", handleIFrameMessage, false);
-  } else if (window.attachEvent) {
-    window.attachEvent("onmessage", handleIFrameMessage);
-  }
-  </script>
-            <!-- The script should remain the same -->
+
+
+            <form>
+
+                <label id="name" class="is-visible">
+                    <label class="label-heading" for="name">What's your name?</label>
+                    <input name="name" type="text" placeholder="Type your name"  />
+
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('name','bedrooms')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('name','bedrooms')"></i>
+                    </div>
+                </label>
+
+                <label id="bedrooms">
+                    <label class="label-heading" for="bedrooms">How many bedrooms are we looking at?</label>
+                    <input type="number" name="bedrooms" placeholder="Enter a value"  />
+
+                    <!-- Update navigation buttons accordingly -->
+
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('bedrooms','pickup')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
+                    </div>
+
+                </label>
+                
+                <label id="pickup">
+                    <label class="label-heading" for="pickup">Nice, Now please tell me the pick-up location.</label>
+                    <input name="pickup" type="text" placeholder="Pick-up location"  />
+                    <!-- Update navigation buttons accordingly -->
+
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('pickup','destination')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('pickup','bedrooms')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('pickup','destination')"></i>
+                    </div>
+                    
+                </label>
+                
+                <label id="destination">
+                    <label class="label-heading" for="destination">And where are we moving to?</label>
+                    <input name="destination" type="text" placeholder="Drop-off location"  />
+                    <!-- Update navigation buttons accordingly -->
+                    
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('destination','movingDate')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('destination','pickup')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('destination','movingDate')"></i>
+                    </div>
+                    
+                </label>
+                
+                <label id="movingDate">
+                    <label class="label-heading" for="movingDate">Fantastic! Have you decided a moving date yet?</label>
+                    <input type="date" name="movingDate"  />
+                    <!-- Update navigation buttons accordingly -->
+                                            
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('movingDate','phone')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('movingDate','destination')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('movingDate','phone')"></i>
+                    </div>
+                 
+                </label>
+                
+                <label id="phone">
+                    <label class="label-heading" for="phone">Now please enter your phone number.</label>
+                    <input type="tel" name="phone" placeholder="0412 345 678"  />
+                    <!-- Update navigation buttons accordingly -->
+                                                                    
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('phone','email')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('phone','movingDate')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('phone','email')"></i>
+                    </div>
+                 
+                </label>
+                
+                <label id="email">
+                    <label class="label-heading" for="email">Now Please enter your email address.</label>
+                    <input type="email" name="email" placeholder="example@email.com.au"  />
+                    <!-- Update navigation buttons accordingly -->
+                                                                                            
+                    <div class="nav-btn-div">
+                        <button type="button" class="nav-button" value="next" onclick="next('email','details')">OK <i
+                                class="fa fa-check" aria-hidden="true"></i></button>
+                        Press <strong>Enter ↵</strong>
+                    </div>
+
+                    <div class="nav-btn-div">
+                        <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('email','phone')"></i>
+                        <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('email','details')"></i>
+                    </div>
+                 
+                </label>
+                
+                <label id="details">
+                    <label class="label-heading" for="details">Do you want to add any additional details?</label>
+                    <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
+                    <div class="nav-btn-div">
+                        <button type="submit" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                    </div>
+                </label>
+                
+                <p id="confirmationMessage" class="confirmation-message">Quote Submitted! One of our team members will be in contact.</p>
+
+
+                <p id="validate"></p>
+
+            </form>
+
+            <script src="./JS/main.js" async></script>
+
+
+
         </div>
         
         <!--The three squares on the main-->

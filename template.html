@@ -1,144 +1,177 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Moving Company</title>
-    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
-    <link rel="stylesheet" type="text/css" href="CSS/exp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
 
+    <link rel="stylesheet" href="./CSS/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src="./JS/main.js" async></script>
 </head>
 
 <body>
-    <header>
+    <div class="container">
+        <h1>Get Quote</h1>
+
+        <section>
+            <div id="iframe-container">
 
 
-        <div class="social-icons">
+                <form>
 
-            <a href = "https://www.facebook.com/Ace11Movers/">
-                <img src="images/icons/facebook.svg" alt="Insta logo" id="Insta-logo">
-                </a>
-                <a href = "https://www.instagram.com/acemovers.com.au/" >
-                <img src="images/icons/instagram.svg" alt="Facebook logo" id="Facebook-logo">
-                </a>
-                <a href = "https://twitter.com/Acemoversnc" >
-                <img src="images/icons/twitter.svg" alt="Twitter logo" id="Twitter-logo">
-                </a>
-    
-        </div>
-        
-        <img src="images/Alpha.webp" alt="Your Logo" id="header-logo">
+                    <label id="name" class="is-visible">
+                        <label class="label-heading" for="name">What's your name?</label>
+                        <input name="name" type="text" placeholder="Type your name"  />
 
-        <h1 id = "companyName-Header"> Alpha Movers</h1>
-       
-       
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('name','bedrooms')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
 
-        
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('name','bedrooms')"></i>
+                        </div>
+                    </label>
 
-        <!-- Other header content -->
+                    <label id="bedrooms">
+                        <label class="label-heading" for="bedrooms">How many bedrooms are we looking at?</label>
+                        <input type="number" name="bedrooms" placeholder="Enter a value"  />
+
+                        <!-- Update navigation buttons accordingly -->
+
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('bedrooms','pickup')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+
+                            <div class="nav-btn-div">
+                                <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
+                                <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
+                            </div>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('bedrooms','name')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('bedrooms','pickup')"></i>
+                        </div>
+
+                    </label>
+                    
+                    <label id="pickup">
+                        <label class="label-heading" for="pickup">Nice, Now please tell me the pick-up location.</label>
+                        <input name="pickup" type="text" placeholder="Pick-up location"  />
+                        <!-- Update navigation buttons accordingly -->
+
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('pickup','destination')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('pickup','bedrooms')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('pickup','destination')"></i>
+                        </div>
+                        
+                    </label>
+                    
+                    <label id="destination">
+                        <label class="label-heading" for="destination">And where are we moving to?</label>
+                        <input name="destination" type="text" placeholder="Drop-off location"  />
+                        <!-- Update navigation buttons accordingly -->
+                        
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('destination','movingDate')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('destination','pickup')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('destination','movingDate')"></i>
+                        </div>
+                        
+                    </label>
+                    
+                    <label id="movingDate">
+                        <label class="label-heading" for="movingDate">Fantastic! Have you decided a moving date yet?</label>
+                        <input type="date" name="movingDate"  />
+                        <!-- Update navigation buttons accordingly -->
+                                                
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('movingDate','phone')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('movingDate','destination')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('movingDate','phone')"></i>
+                        </div>
+                     
+                    </label>
+                    
+                    <label id="phone">
+                        <label class="label-heading" for="phone">Now please enter your phone number.</label>
+                        <input type="tel" name="phone" placeholder="0412 345 678"  />
+                        <!-- Update navigation buttons accordingly -->
+                                                                        
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('phone','email')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('phone','movingDate')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('phone','email')"></i>
+                        </div>
+                     
+                    </label>
+                    
+                    <label id="email">
+                        <label class="label-heading" for="email">Now Please enter your email address.</label>
+                        <input type="email" name="email" placeholder="example@email.com.au"  />
+                        <!-- Update navigation buttons accordingly -->
+                                                                                                
+                        <div class="nav-btn-div">
+                            <button type="button" class="nav-button" value="next" onclick="next('email','details')">OK <i
+                                    class="fa fa-check" aria-hidden="true"></i></button>
+                            Press <strong>Enter ↵</strong>
+                        </div>
+
+                        <div class="nav-btn-div">
+                            <i class="fa fa-arrow-up" style="font-size:24px" onclick="previous('email','phone')"></i>
+                            <i class="fa fa-arrow-down" style="font-size:24px" onclick="next('email','details')"></i>
+                        </div>
+                     
+                    </label>
+                    
+                    <label id="details">
+                        <label class="label-heading" for="details">Do you want to add any additional details?</label>
+                        <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
+                        <div class="nav-btn-div">
+                            <button type="submit" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        </div>
+                    </label>
+
+                    <p id="confirmationMessage" class="confirmation-message">Quote Submitted! One of our team members will be in contact.</p>
+
+
+                    <p id="validate"></p>
+
+                </form>
 
 
 
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li class="dropdown">
-                    <a href="javascript:void(0)" class="dropbtn">Services &#9662;</a>
-                    <div class="dropdown-content">
-                        <a href="services.html">Local</a>
-                        <a href="services.html">Interstate</a>
-                    </div>
-                </li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="#blogs">Blogs</a></li>
-                <li><a href="template.html">Template</a></li>
-            </ul>
-        </nav>
+            </div>
 
-        <a href="quote.html" class="get-quote-btn">Get Quote</a>
-
-
-
-    </header>
-
-
-    <main>
-
-        <h1>TEMPLATE</h1>
-
-        
-    <iframe
-    id="JotFormIFrame-240730683789064"
-    title="Form"
-    onload="window.parent.scrollTo(0,0)"
-    allowtransparency="true"
-    allowfullscreen="true"
-    allow="geolocation; microphone; camera"
-    src="https://form.jotform.com/240730683789064"
-    frameborder="0"
-    style="min-width:100%;max-width:100%;height:539px;border:none;"
-    scrolling="no"
-  >
-  </iframe>
-  <script type="text/javascript" src="https://form.jotform.com/jsform/240730683789064"></script>
-            
-        </div>
-
-
-        <script src="JS/exp.js"></script>
-
-
-
-
-    </main>
-
-    <footer>
- 
-
-        <img src="images/Alpha.webp" alt="Your Logo footer" id="footer-logo">
-
-      
-        <div class="footer-column">
-            <h3>Important Links</h3>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#Contact">Contact</a></li>
-                <li><a href="#TermsofService">Terms of Service</a></li>
-                <!-- Add more links as needed -->
-            </ul>
-        </div>
-           
-        <div class="social-icons">
-
-            <a href = "https://www.facebook.com/Ace11Movers/">
-                <img src="images/icons/facebook.svg" alt="Insta logo" id="Insta-logo">
-                </a>
-                <a href = "https://www.instagram.com/acemovers.com.au/" >
-                <img src="images/icons/instagram.svg" alt="Facebook logo" id="Facebook-logo">
-                </a>
-                <a href = "https://twitter.com/Acemoversnc" >
-                <img src="images/icons/twitter.svg" alt="Twitter logo" id="Twitter-logo">
-                </a>
-    
-        </div>
-
-        <div class="footer-column">
-            <h3>Get in Touch</h3>
-            <p>Contact us at <a href="mailto:contact@movingcompany.com">contact@movingcompany.com</a></p>
-            <!-- Add more contact information as needed -->
-        </div>
-
-
-        <div class="footer-text">
-            <p>At Alpha Movers, we understand that relocation can be overwhelming for many people. With the added pressure of getting your stuff from A to B safely, it can be stressful. We believe that no one deserves to go through such stress, that’s why we put our prime focus in making the move smooth and stress-free for you.</p>
-        </div>
-    </footer>
-
-
-    <script src="JS/script.js"></script>
+        </section>
+    </div>
 </body>
 
 </html>

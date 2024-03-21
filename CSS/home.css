@@ -15,27 +15,6 @@ main {
     margin-bottom: 1.25rem;
 }
 
-#iframe-container {
-    margin: 2em auto;
-    padding: 3em;
-    background: #ffffff;
-    border-radius: 1rem;
-    box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.1);
-    width: 80%; /* Adjust based on your layout */
-    max-width: 60rem; /* Or any max-width that fits your design */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Ensure iframe responsively adjusts within the container */
-#iframe-container iframe {
-    width: 100%; /* Responsive width */
-    max-width: 100%; /* Limit width to 100% of the container */
-    height: 539px; /* Adjust height as necessary */
-    border: none; /* Remove default border */
-}
-
 #main-content {
     position: relative;
     z-index: 1;
