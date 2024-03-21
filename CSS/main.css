@@ -55,6 +55,8 @@
     letter-spacing: 4px;
     padding-top: 30px;
     text-align: center;
+    position: relative; /* This ensures that absolute positioning is relative to each label */
+    overflow: hidden; /* Prevents the icon from being visible outside the label */
   }
   
   label.is-visible {
@@ -309,6 +311,7 @@
     display: fixed;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Prevents the icon from being visible outside the label */
 }
 
 /* Ensure iframe responsively adjusts within the container */
@@ -332,4 +335,42 @@
     transition: all 0.3s ease-in-out;
     display: none; /* Initially hidden; shown after form submission */
   }
+
+/* Define keyframes for moving icons in and out within the container */
+@keyframes moveIn {
+  from { transform: translateX(50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes moveOut {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(-50px); opacity: 0; }
+}
+
+@keyframes moveInBack {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes moveOutBack {
+  from { transform: translateX(0); opacity: 1; }
+  to { transform: translateX(50px); opacity: 0; }
+}
+
+/* Apply animations to icon images */
+img.move-in {
+  animation: moveIn 1s forwards;
+}
+
+img.move-out {
+  animation: moveOut 1s forwards;
+}
+
+img.move-in-back {
+  animation: moveInBack 1s forwards;
+}
+
+img.move-out-back {
+  animation: moveOutBack 1s forwards;
+}
   

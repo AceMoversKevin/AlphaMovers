@@ -74,19 +74,34 @@ function next(from, to) {
         error.innerHTML = "Please fill out this field.";
     } else {
         error.innerHTML = "";
+        let fromIcon = document.querySelector(`#${from} img`);
+        let toIcon = document.querySelector(`#${to} img`);
         document.getElementById(from).classList.remove('is-visible');
         document.getElementById(to).classList.add('is-visible');
+        fromIcon.classList.add('move-out');
+        toIcon.classList.add('move-in');
         updateDataLayer('currentStep', to);
+        setTimeout(() => {
+            fromIcon.classList.remove('move-out');
+            toIcon.classList.remove('move-in');
+        }, 1000); // Duration should match the CSS animation
     }
 }
 
 // In house function to go from one question in conversational form BACK to the previous question, works by removing visible of current layer and restoring visibility of previous layer
 function previous(from, to) {
     error.innerHTML = "";
-    console.log();
+    let fromIcon = document.querySelector(`#${from} img`);
+    let toIcon = document.querySelector(`#${to} img`);
     document.getElementById(from).classList.remove('is-visible');
     document.getElementById(to).classList.add('is-visible');
+    fromIcon.classList.add('move-out-back');
+    toIcon.classList.add('move-in-back');
     updateDataLayer('currentStep', to);
+    setTimeout(() => {
+        fromIcon.classList.remove('move-out-back');
+        toIcon.classList.remove('move-in-back');
+    }, 1000); // Duration should match the CSS animation
 }
 
 
