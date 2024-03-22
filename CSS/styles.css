@@ -144,8 +144,8 @@ header {
 
 .modern-footer {
     font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f7f7f7;
+    color: #ffffff;
+    background-color: #2c3e50;
     padding: 20px 0;
     text-align: center;
 }
@@ -168,7 +168,7 @@ header {
 }
 
 .modern-footer ul li a {
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     margin: 5px 0;
 }
@@ -187,6 +187,7 @@ header {
 }
 
 .modern-footer .contact p {
+    color:#ffffff;
     margin: 0;
     font-size: 14px;
 }
