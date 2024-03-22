@@ -322,6 +322,11 @@
     border: none; /* Remove default border */
 }
 
+.formheading{
+  text-align: center;
+  justify-content: center;
+}
+
 .confirmation-message {
     color: #000000;
     background-color: #ffffff;
