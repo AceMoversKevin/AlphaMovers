@@ -2,6 +2,7 @@ let error = document.getElementById('validate');
 let label = document.getElementsByTagName("label");
 
 // Update the event listeners for each input to reflect the new flow
+/*
 document.getElementById("name")
     .addEventListener("keyup", function (e) {
         if (e.keyCode === 13) {
@@ -58,6 +59,8 @@ document.getElementById("email")
         }
     });
 
+    */
+
 
 window.dataLayer = window.dataLayer || [];
 
@@ -74,18 +77,46 @@ function next(from, to) {
         error.innerHTML = "Please fill out this field.";
     } else {
         error.innerHTML = "";
-        let fromIcon = document.querySelector(`#${from} img`);
-        let toIcon = document.querySelector(`#${to} img`);
-        document.getElementById(from).classList.remove('is-visible');
+        let fromIcon = document.querySelector(`#${from} img`); //selects the from img
+        let toIcon = document.querySelector(`#${to} img`); //selects the to img
+        
+        
+        
+        fromIcon.classList.add('move-out'); //translating the inital Icon 
+        
+
+        setTimeout(() => {
+        document.getElementById(from).classList.remove('is-visible');  //slight delay in removing the current form and adding the other form and removing the move out icon from the class list
         document.getElementById(to).classList.add('is-visible');
-        fromIcon.classList.add('move-out');
-        toIcon.classList.add('move-in');
+        fromIcon.classList.remove('move-out');
+        },1000); 
+
+        
+        
+        
+       
+            
+        
+        //toIcon.classList.add('move-in');
+
+        setTimeout(()=> {toIcon.classList.add('move-in');},1000) // once the other form loads in the other Icon Loads in
+            
+        
         updateDataLayer('currentStep', to);
+
+        
+        toIcon.classList.remove('move-in'); // finally removing the move in Functionaly from the toIcon
+        //fromIcon.classList.add('move-out');
+
+        /*
         setTimeout(() => {
             fromIcon.classList.remove('move-out');
             toIcon.classList.remove('move-in');
-        }, 1000); // Duration should match the CSS animation
+        }, 2000); // Duration should match the CSS animation
+         */
     }
+         
+        
 }
 
 // In house function to go from one question in conversational form BACK to the previous question, works by removing visible of current layer and restoring visibility of previous layer
@@ -93,15 +124,24 @@ function previous(from, to) {
     error.innerHTML = "";
     let fromIcon = document.querySelector(`#${from} img`);
     let toIcon = document.querySelector(`#${to} img`);
-    document.getElementById(from).classList.remove('is-visible');
-    document.getElementById(to).classList.add('is-visible');
+
+
     fromIcon.classList.add('move-out-back');
-    toIcon.classList.add('move-in-back');
-    updateDataLayer('currentStep', to);
+
     setTimeout(() => {
+        document.getElementById(from).classList.remove('is-visible');
+        document.getElementById(to).classList.add('is-visible');
         fromIcon.classList.remove('move-out-back');
+        },1000); 
+
+    setTimeout(()=> {toIcon.classList.add('move-in-back');},1000)
+    //fromIcon.classList.add('move-out-back');
+    //toIcon.classList.add('move-in-back');
+    updateDataLayer('currentStep', to);
+    
+        //fromIcon.classList.add('move-out-back');
         toIcon.classList.remove('move-in-back');
-    }, 1000); // Duration should match the CSS animation
+     // Duration should match the CSS animation
 }
 
 
