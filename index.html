@@ -15,25 +15,25 @@
 
         <div class="social-icons">
 
-            <a href = "https://www.facebook.com/Ace11Movers/">
+            <a href="https://www.facebook.com/Ace11Movers/">
                 <img src="images/icons/facebook.svg" alt="Insta logo" id="Insta-logo">
-                </a>
-                <a href = "https://www.instagram.com/acemovers.com.au/" >
+            </a>
+            <a href="https://www.instagram.com/acemovers.com.au/">
                 <img src="images/icons/instagram.svg" alt="Facebook logo" id="Facebook-logo">
-                </a>
-                <a href = "https://twitter.com/Acemoversnc" >
+            </a>
+            <a href="https://twitter.com/Acemoversnc">
                 <img src="images/icons/twitter.svg" alt="Twitter logo" id="Twitter-logo">
-                </a>
-    
+            </a>
+
         </div>
-        
+
         <img src="images/Alpha.webp" alt="Your Logo" id="header-logo">
 
-        <h1 id = "companyName-Header"> Alpha Movers</h1>
-       
-       
+        <h1 id="companyName-Header"> Alpha Movers</h1>
 
-        
+
+
+
 
         <!-- Other header content -->
 
@@ -71,152 +71,155 @@
         <!--This is for the form add everything else after-->
         <div id="iframe-container">
 
-            
+
 
 
             <form>
                 <h1 id="formheading">Quick Quote</h1>
 
-                <label id="name" class="is-visible" >
-                    <img src="images/icons/person.svg" alt="Form Icon" > 
+                <label id="name" class="is-visible">
+                    <img src="images/icons/person.svg" alt="Form Icon">
 
                     <label class="label-heading" for="name">What's your name?</label>
-                    <input name="name" type="text" placeholder="Type your name"  />
+                    <input name="name" type="text" placeholder="Type your name" />
 
-                  
+
 
                     <div class="nav-btn-div">
-                        
-                        <i style="font-size:24px" onclick="next('name','bedrooms')" id = "N">Next</i>
+
+                        <i style="font-size:24px" onclick="next('name','bedrooms')" id="N">Next</i>
                     </div>
-                    
+
                 </label>
 
                 <label id="bedrooms">
-                    <img src="images/icons/bedroom.svg" alt="Form Icon" > 
-                   
+                    <img src="images/icons/bedroom.svg" alt="Form Icon">
+
                     <label class="label-heading" for="bedrooms">How many bedrooms are we looking at?</label>
-                    <input type="number" name="bedrooms" placeholder="Enter a value"  />
+                    <input type="number" name="bedrooms" placeholder="Enter a value" />
 
                     <!-- Update navigation buttons accordingly -->
 
-                  
-                  
+
+
                     <div class="nav-btn-div">
-                        <i style="font-size:24px" onclick="previous('bedrooms','name')" id = "P">Prev</i>
-                        <i style="font-size:24px" onclick="next('bedrooms','pickup')" id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('bedrooms','name')" id="P">Prev</i>
+                        <i style="font-size:24px" onclick="next('bedrooms','pickup')" id="N">Next</i>
+
+
                     </div>
-                    
+
 
                 </label>
-                
+
                 <label id="pickup">
-                    <img src="images/icons/pick.svg" alt="Form Icon" > 
+                    <img src="images/icons/pick.svg" alt="Form Icon">
                     <label class="label-heading" for="pickup">Nice, Now please tell me the pick-up location.</label>
-                    <input name="pickup" type="text" placeholder="Pick-up location"   />
+                    <input name="pickup" type="text" placeholder="Pick-up location" />
                     <!-- Update navigation buttons accordingly -->
 
-               
+
 
                     <div class="nav-btn-div">
-                        <i style="font-size:24px" onclick="previous('pickup','bedrooms')" id = "P"> Prev</i>
-                        <i  style="font-size:24px" onclick="next('pickup','destination')"id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('pickup','bedrooms')" id="P"> Prev</i>
+                        <i style="font-size:24px" onclick="next('pickup','destination')" id="N">Next</i>
+
+
                     </div>
-                    
+
                 </label>
-                
+
                 <label id="destination">
-                    
-                    <img src="images/icons/destination.svg" alt="Form Icon" > 
+
+                    <img src="images/icons/destination.svg" alt="Form Icon">
                     <label class="label-heading" for="destination">And where are we moving to?</label>
-                    <input name="destination" type="text" placeholder="Drop-off location"  />
+                    <input name="destination" type="text" placeholder="Drop-off location" />
                     <!-- Update navigation buttons accordingly -->
-                    
-                  
+
+
 
                     <div class="nav-btn-div">
-                        <i  style="font-size:24px" onclick="previous('destination','pickup')" id = "P">Prev</i>
-                        <i  style="font-size:24px" onclick="next('destination','movingDate')" id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('destination','pickup')" id="P">Prev</i>
+                        <i style="font-size:24px" onclick="next('destination','movingDate')" id="N">Next</i>
+
+
                     </div>
-                    
+
                 </label>
-                
+
                 <label id="movingDate">
-                    <img src="images/icons/date.svg" alt="Form Icon" > 
-                    
+                    <img src="images/icons/date.svg" alt="Form Icon">
+
                     <label class="label-heading" for="movingDate">Fantastic! Have you decided a moving date yet?</label>
-                    <input type="date" name="movingDate"  />
+                    <input type="date" name="movingDate" />
                     <!-- Update navigation buttons accordingly -->
-                                            
-                   
+
+
 
                     <div class="nav-btn-div">
-                        <i style="font-size:24px" onclick="previous('movingDate','destination')" id = "P">Prev</i>
-                        <i style="font-size:24px" onclick="next('movingDate','phone')" id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('movingDate','destination')" id="P">Prev</i>
+                        <i style="font-size:24px" onclick="next('movingDate','phone')" id="N">Next</i>
+
+
                     </div>
-                 
+
                 </label>
-                
+
                 <label id="phone"><!--Phone-->
-                    <img src="images/icons/phone.svg" alt="Form Icon" > 
-                    
+                    <img src="images/icons/phone.svg" alt="Form Icon">
+
                     <label class="label-heading" for="phone">Now, please enter your phone number.</label>
                     <input type="text" name="phone" placeholder="0412 345 678" />
                     <!-- Update navigation buttons accordingly -->
-                                                                    
+
 
                     <div class="nav-btn-div">
-                        <i  style="font-size:24px" onclick="previous('phone','movingDate')" id = "P">Prev</i>
-                        <i  style="font-size:24px" onclick="next('phone','email')" id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('phone','movingDate')" id="P">Prev</i>
+                        <i style="font-size:24px" onclick="next('phone','email')" id="N">Next</i>
+
+
                     </div>
-                 
+
                 </label>
-                
-                <label id="email" > <!-- Email-->
-                    <img src="images/icons/email.svg" alt="Form Icon" > 
-                    
+
+                <label id="email"> <!-- Email-->
+                    <img src="images/icons/email.svg" alt="Form Icon">
+
                     <label class="label-heading" for="email">Now, please enter your email address.</label>
-                    <input type="email" name="email" placeholder="example@email.com.au"  />
+                    <input type="email" name="email" placeholder="example@email.com.au" />
                     <!-- Update navigation buttons accordingly -->
-                                                                                            
-                 
+
+
 
                     <div class="nav-btn-div">
-                        <i style="font-size:24px" onclick="previous('email','phone')" id = "P">Prev</i>
-                        <i style="font-size:24px" onclick="next('email','details')" id = "N">Next</i>
-                        
-                        
+                        <i style="font-size:24px" onclick="previous('email','phone')" id="P">Prev</i>
+                        <i style="font-size:24px" onclick="next('email','details')" id="N">Next</i>
+
+
                     </div>
-                 
+
                 </label>
-                
+
                 <label id="details">
-                    <img src="images/icons/details.svg" alt="Form Icon" > 
-                    
+                    <img src="images/icons/details.svg" alt="Form Icon">
+
                     <label class="label-heading" for="details">Do you want to add any additional details?</label>
-                    <textarea name="details" placeholder="Any additional details" style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
-                    
+                    <textarea name="details" placeholder="Any additional details"
+                        style="width: 100%; max-width: 400px; height: 150px; border: 2px solid #000000; padding: 5px;"></textarea>
+
                     <div class="nav-btn-div">
-                        <i style="font-size:24px" onclick="previous('details','email')"id = "P">Prev</i>
-                       
+                        <i style="font-size:24px" onclick="previous('details','email')" id="P">Prev</i>
+
                     </div>
 
                     <div class="nav-btn-div">
-                        <button type="submit" onclick="SendEmail()" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+                        <button type="submit" class="nav-button" value="submit">Submit <i class="fa fa-paper-plane"
+                                aria-hidden="true"></i></button>
                     </div>
                 </label>
-                
-                <p id="confirmationMessage" class="confirmation-message">Quote Request Submitted! One of our team members will be in contact.</p>
+
+                <p id="confirmationMessage" class="confirmation-message">Quote Request Submitted! One of our team
+                    members will be in contact.</p>
 
 
                 <p id="validate"></p>
@@ -226,7 +229,7 @@
             <script src="./JS/main.js" async></script>
 
         </div>
-        
+
         <!--The three squares on the main-->
         <div id="why-us">
 
@@ -298,7 +301,8 @@
                     </div>
                     <div class="review-stars">★★★★★</div>
                     <div class="review-body">
-                        Vishal and Resham great helpers. Extremely satisfied with their service. Absolutely recommend them.
+                        Vishal and Resham great helpers. Extremely satisfied with their service. Absolutely recommend
+                        them.
                     </div>
                 </div>
 
@@ -358,7 +362,9 @@
                     </div>
                     <div class="review-stars">★★★★★</div>
                     <div class="review-body">
-                        Sohaib and Arman were amazing. They moved everything over so quickly and efficiently and were lovely. The cost is very reasonable and they were so easy with helping us with all of our requests.
+                        Sohaib and Arman were amazing. They moved everything over so quickly and efficiently and were
+                        lovely. The cost is very reasonable and they were so easy with helping us with all of our
+                        requests.
                     </div>
                 </div>
 
@@ -390,8 +396,10 @@
                 </div>
                 <div class="footer-column social-media">
                     <!-- Simplified presentation with icons only -->
-                    <a href="https://www.facebook.com/Ace11Movers/"><img src="images/icons/facebook.svg" alt="Facebook"></a>
-                    <a href="https://www.instagram.com/acemovers.com.au/"><img src="images/icons/instagram.svg" alt="Instagram"></a>
+                    <a href="https://www.facebook.com/Ace11Movers/"><img src="images/icons/facebook.svg"
+                            alt="Facebook"></a>
+                    <a href="https://www.instagram.com/acemovers.com.au/"><img src="images/icons/instagram.svg"
+                            alt="Instagram"></a>
                     <a href="https://twitter.com/Acemoversnc"><img src="images/icons/twitter.svg" alt="Twitter"></a>
                 </div>
                 <div class="footer-column contact">

@@ -80,8 +80,6 @@ function next(from, to) {
         let fromIcon = document.querySelector(`#${from} img`); //selects the from img
         let toIcon = document.querySelector(`#${to} img`); //selects the to img
         
-        
-        
         fromIcon.classList.add('move-out'); //translating the inital Icon 
         
 
@@ -90,18 +88,11 @@ function next(from, to) {
         document.getElementById(to).classList.add('is-visible');
         fromIcon.classList.remove('move-out');
         },1000); 
-
-        
-        
-        
-       
-            
         
         //toIcon.classList.add('move-in');
 
         setTimeout(()=> {toIcon.classList.add('move-in');},1000) // once the other form loads in the other Icon Loads in
             
-        
         updateDataLayer('currentStep', to);
 
         
@@ -189,71 +180,71 @@ document.querySelector('form').addEventListener('submit', function (e) {
 
 });
 
-function SendEmail() {
+// function SendEmail() {
 
-    /* 
-    Name: Piyal
-    Bedrooms: 2
-    Pickup: 3122
-    Dropoff: 3171
-    Date: 2024-03-30
-    Phone number: 0412515151
-    Email: kevin@acemovers.com.au
-    Details: Test Form Input
-    */
+//     /* 
+//     Name: Piyal
+//     Bedrooms: 2
+//     Pickup: 3122
+//     Dropoff: 3171
+//     Date: 2024-03-30
+//     Phone number: 0412515151
+//     Email: kevin@acemovers.com.au
+//     Details: Test Form Input
+//     */
 
-    document.querySelector('form').addEventListener('submit', function (e) {
-        // Prevent the actual form submission
-        e.preventDefault();
+//     document.querySelector('form').addEventListener('submit', function (e) {
+//         // Prevent the actual form submission
+//         e.preventDefault();
 
-        // Initialize an object to store the form data
-        let formData = {
-            Name: document.querySelector('input[name="name"]').value,
-            Bedrooms: document.querySelector('input[name="bedrooms"]').value,
-            Pickup: document.querySelector('input[name="pickup"]').value,
-            Dropoff: document.querySelector('input[name="destination"]').value,
-            Date: document.querySelector('input[name="movingDate"]').value,
-            'Phone number': document.querySelector('input[name="phone"]').value,
-            Email: document.querySelector('input[name="email"]').value,
-            Details: document.querySelector('textarea[name="details"]').value,
-        };
+//         // Initialize an object to store the form data
+//         let formData = {
+//             Name: document.querySelector('input[name="name"]').value,
+//             Bedrooms: document.querySelector('input[name="bedrooms"]').value,
+//             Pickup: document.querySelector('input[name="pickup"]').value,
+//             Dropoff: document.querySelector('input[name="destination"]').value,
+//             Date: document.querySelector('input[name="movingDate"]').value,
+//             'Phone number': document.querySelector('input[name="phone"]').value,
+//             Email: document.querySelector('input[name="email"]').value,
+//             Details: document.querySelector('textarea[name="details"]').value,
+//         };
 
-        // Format the data for display or for sending it to a server or email
-        let formattedData = `<strong>Name:</strong> ${formData.Name}<br>
-        <strong>Bedrooms:</strong> ${formData.Bedrooms}<br>
-        <strong>Pickup:</strong> ${formData.Pickup}<br>
-        <strong>Dropoff:</strong> ${formData.Dropoff}<br>
-        <strong>Date:</strong> ${formData.Date}<br>
-        <strong>Phone number:</strong> ${formData['Phone number']}<br>
-        <strong>Email:</strong> ${formData.Email}<br>
-        <strong>Details:</strong> ${formData.Details}<br>
-        (Quote from Website)`;
+//         // Format the data for display or for sending it to a server or email
+//         let formattedData = `<strong>Name:</strong> ${formData.Name}<br>
+//         <strong>Bedrooms:</strong> ${formData.Bedrooms}<br>
+//         <strong>Pickup:</strong> ${formData.Pickup}<br>
+//         <strong>Dropoff:</strong> ${formData.Dropoff}<br>
+//         <strong>Date:</strong> ${formData.Date}<br>
+//         <strong>Phone number:</strong> ${formData['Phone number']}<br>
+//         <strong>Email:</strong> ${formData.Email}<br>
+//         <strong>Details:</strong> ${formData.Details}<br>
+//         (Quote from Website)`;
 
-        // for testing purposes
-        console.log(formattedData + "(Send email function)");
-
-
-        // SMTP protocol sends form data to Elastic Email API to bounce to recipient email address
-        Email.send({
-            Host: "smtp.elasticemail.com",
-            Username: "aaron@acemovers.com.au",
-            Password: "8F1E23DEE343B60A0336456A6944E7B4F7DA",
-            To: 'aaron@acemovers.com.au',
-            From: "aaron@acemovers.com.au",
-            Subject: "Alpha Movers Quote",
-            Body: formattedData
-
-        }).then(
-            message => alert(message)
-        );
-
-        document.getElementById('confirmationMessage').style.display = 'block'; // Displays form submitted message
+//         // for testing purposes
+//         console.log(formattedData + "(Send email function)");
 
 
+//         // SMTP protocol sends form data to Elastic Email API to bounce to recipient email address
+//         Email.send({
+//             Host: "smtp.elasticemail.com",
+//             Username: "aaron@acemovers.com.au",
+//             Password: "8F1E23DEE343B60A0336456A6944E7B4F7DA",
+//             To: 'aaron@acemovers.com.au',
+//             From: "aaron@acemovers.com.au",
+//             Subject: "Alpha Movers Quote",
+//             Body: formattedData
 
-    });
+//         }).then(
+//             message => alert(message)
+//         );
 
-    console.log('Send Email function Successfully Called')
+//         document.getElementById('confirmationMessage').style.display = 'block'; // Displays form submitted message
 
 
-}
+
+//     });
+
+//     console.log('Send Email function Successfully Called')
+
+
+// }
