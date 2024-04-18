@@ -153,7 +153,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
         Details: document.querySelector('textarea[name="details"]').value,
     };
 
-    fetch('http://localhost:3000/submit-form', {
+    fetch('https://backend-jliy.onrender.com/submit-form', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
