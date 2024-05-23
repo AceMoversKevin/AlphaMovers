@@ -1,66 +1,6 @@
 let error = document.getElementById('validate');
 let label = document.getElementsByTagName("label");
 
-// Update the event listeners for each input to reflect the new flow
-/*
-document.getElementById("name")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next("name", "bedrooms");
-        }
-    });
-
-document.getElementById("bedrooms")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('bedrooms', 'pickup');
-        }
-    });
-
-document.getElementById("pickup")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('pickup', 'destination');
-        }
-    });
-
-document.getElementById("destination")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('destination', 'movingDate');
-        }
-    });
-
-document.getElementById("movingDate")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('movingDate', 'phone');
-        }
-    });
-
-document.getElementById("phone")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('phone', 'email');
-        }
-    });
-
-document.getElementById("email")
-    .addEventListener("keyup", function (e) {
-        if (e.keyCode === 13) {
-            e.preventDefault();
-            next('email', 'details');
-        }
-    });
-
-    */
-
 
 window.dataLayer = window.dataLayer || [];
 
@@ -153,7 +93,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
         Details: document.querySelector('textarea[name="details"]').value,
     };
 
-    fetch('submit-form.php', {
+    fetch('http://localhost/backend/submit-form.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
