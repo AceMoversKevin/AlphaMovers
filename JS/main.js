@@ -29,7 +29,7 @@ function next(from, to) {
         fromIcon.classList.remove('move-out');
         },1000); 
         
-        //toIcon.classList.add('move-in');
+
 
         setTimeout(()=> {toIcon.classList.add('move-in');},1000) // once the other form loads in the other Icon Loads in
             
@@ -37,14 +37,7 @@ function next(from, to) {
 
         
         toIcon.classList.remove('move-in'); // finally removing the move in Functionaly from the toIcon
-        //fromIcon.classList.add('move-out');
 
-        /*
-        setTimeout(() => {
-            fromIcon.classList.remove('move-out');
-            toIcon.classList.remove('move-in');
-        }, 2000); // Duration should match the CSS animation
-         */
     }
          
         
@@ -66,11 +59,9 @@ function previous(from, to) {
         },1000); 
 
     setTimeout(()=> {toIcon.classList.add('move-in-back');},1000)
-    //fromIcon.classList.add('move-out-back');
-    //toIcon.classList.add('move-in-back');
     updateDataLayer('currentStep', to);
     
-        //fromIcon.classList.add('move-out-back');
+
         toIcon.classList.remove('move-in-back');
      // Duration should match the CSS animation
 }
